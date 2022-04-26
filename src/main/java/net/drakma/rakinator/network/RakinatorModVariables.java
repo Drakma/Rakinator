@@ -4,6 +4,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import java.util.List;
+import java.util.ArrayList;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RakinatorModVariables {
 	public static double barrel_time_between_filling = 150.0;
@@ -17,6 +20,7 @@ public class RakinatorModVariables {
 	public static double heat_block_modifier_4 = 0.4;
 	public static double heat_block_modifier_5 = 0.2;
 	public static double composting_time = 240.0;
+	public static List<String> ResourceList = new ArrayList<String>();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

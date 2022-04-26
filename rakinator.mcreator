@@ -601,11 +601,15 @@
       "name": "WoodenBarrelOnBlockRightClicked",
       "type": "procedure",
       "sortid": 175,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_barrel_on_block_right_clicked",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -634,11 +638,15 @@
       "name": "WoodenBarrelTick",
       "type": "procedure",
       "sortid": 176,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_barrel_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -770,11 +778,15 @@
       "name": "Collector0Tick",
       "type": "procedure",
       "sortid": 180,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "collector_0_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -861,11 +873,15 @@
       "name": "Composter0Tick",
       "type": "procedure",
       "sortid": 183,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "composter_0_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -961,11 +977,15 @@
       "name": "Crucible0Tick",
       "type": "procedure",
       "sortid": 186,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crucible_0_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1023,11 +1043,15 @@
       "name": "StoneBarrel0Tick",
       "type": "procedure",
       "sortid": 188,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "stone_barrel_0_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -3484,8 +3508,8 @@
     "en_us": {
       "block.rakinator.enchanted_water_fluid": "Enchanted Water",
       "item.rakinator.wooden_bucket_lava": "Wooden Lava Bucket",
-      "item.rakinator.starmetal_piece": "Starmetal Piece",
       "item.rakinator.grass_seed": "Grass Seed",
+      "item.rakinator.starmetal_piece": "Starmetal Piece",
       "item.rakinator.aluminum_ingot": "Aluminum Ingot",
       "item.rakinator.gold_chunk": "Gold Chunk",
       "item.rakinator.air_element": "Air Element",
