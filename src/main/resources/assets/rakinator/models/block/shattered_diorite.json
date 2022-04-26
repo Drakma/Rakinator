@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/shattered_diorite",
+    "up": "rakinator:blocks/shattered_diorite",
+    "north": "rakinator:blocks/shattered_diorite",
+    "east": "rakinator:blocks/shattered_diorite",
+    "south": "rakinator:blocks/shattered_diorite",
+    "west": "rakinator:blocks/shattered_diorite",
+    "particle": "rakinator:blocks/shattered_diorite"
+  }
+}

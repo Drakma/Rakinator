@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        " SC",
+        "S  "
+    ],
+    "key": {
+        "C": {
+            "tag": "forge:gems/diamond"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rakinator:diamond_hammer",
+        "count": 1
+    }
+}

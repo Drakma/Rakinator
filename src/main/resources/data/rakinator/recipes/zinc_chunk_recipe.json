@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:zinc_piece"
+    },
+    {
+      "item": "rakinator:zinc_piece"
+    },
+    {
+      "item": "rakinator:zinc_piece"
+    },
+    {
+      "item": "rakinator:zinc_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:zinc_chunk",
+    "count": 1
+  }
+}

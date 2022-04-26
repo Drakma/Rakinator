@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "rakinator:blazing_quartz_chunk"
+  },
+  "result": "rakinator:blazing_quartz_ingot"
+}

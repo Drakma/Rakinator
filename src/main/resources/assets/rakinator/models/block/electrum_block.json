@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_electrum",
+    "up": "rakinator:blocks/block_electrum",
+    "north": "rakinator:blocks/block_electrum",
+    "east": "rakinator:blocks/block_electrum",
+    "south": "rakinator:blocks/block_electrum",
+    "west": "rakinator:blocks/block_electrum",
+    "particle": "rakinator:blocks/block_electrum"
+  }
+}

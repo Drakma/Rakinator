@@ -1,0 +1,58 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rake_netherite",
+    "customModelName": "Normal",
+    "name": "Netherite Rake",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:RakinatorCreativeTab"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 15.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 1800,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:ShatteredAndesite"
+      },
+      {
+        "value": "CUSTOM:ShatteredDiorite"
+      },
+      {
+        "value": "CUSTOM:ShatteredEndStone"
+      },
+      {
+        "value": "CUSTOM:ShatteredGranite"
+      },
+      {
+        "value": "CUSTOM:ShatteredNetherrack"
+      },
+      {
+        "value": "CUSTOM:ShatteredSkystone"
+      },
+      {
+        "value": "CUSTOM:Dust"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

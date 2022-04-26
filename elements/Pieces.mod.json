@@ -1,0 +1,50 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CobaltPiece"
+      },
+      {
+        "value": "CUSTOM:CopperPiece"
+      },
+      {
+        "value": "CUSTOM:DragonstonePiece"
+      },
+      {
+        "value": "CUSTOM:ElementiumPiece"
+      },
+      {
+        "value": "CUSTOM:GoldPiece"
+      },
+      {
+        "value": "CUSTOM:IronPiece"
+      },
+      {
+        "value": "CUSTOM:LeadPiece"
+      },
+      {
+        "value": "CUSTOM:SilverPiece"
+      },
+      {
+        "value": "CUSTOM:SoulstonePiece"
+      },
+      {
+        "value": "CUSTOM:StarmetalPiece"
+      },
+      {
+        "value": "CUSTOM:ZincPiece"
+      },
+      {
+        "value": "CUSTOM:BlazingQuartzPiece"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "pieces",
+    "namespace": "forge"
+  }
+}

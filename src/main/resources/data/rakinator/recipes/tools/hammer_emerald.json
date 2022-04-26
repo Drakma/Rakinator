@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        " SC",
+        "S  "
+    ],
+    "key": {
+        "C": {
+            "tag": "forge:gems/emerald"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rakinator:emerald_hammer",
+        "count": 1
+    }
+}

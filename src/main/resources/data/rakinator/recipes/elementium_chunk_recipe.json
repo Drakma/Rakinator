@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:elementium_piece"
+    },
+    {
+      "item": "rakinator:elementium_piece"
+    },
+    {
+      "item": "rakinator:elementium_piece"
+    },
+    {
+      "item": "rakinator:elementium_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:elementium_chunk",
+    "count": 1
+  }
+}

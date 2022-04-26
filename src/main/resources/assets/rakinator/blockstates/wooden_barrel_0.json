@@ -1,0 +1,43 @@
+{
+    "variants": {
+        "fill=0": {
+            "model": "rakinator:block/wooden_barrel_0"
+        },
+        "fill=1": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_1"
+        },
+        "fill=2": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_2"
+        },
+        "fill=3": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_3"
+        },
+        "fill=4": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_4"
+        },
+        "fill=5": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_5"
+        },
+        "fill=6": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_6"
+        },
+        "fill=7": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_7"
+        },
+        "fill=8": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_clay"
+        },
+        "fill=9": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_enchanted_water"
+        },
+        "fill=10": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_milk"
+        },
+        "fill=11": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_murky_water"
+        },
+        "fill=12": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_salt_water"
+        }
+    }
+}

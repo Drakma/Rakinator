@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:iron_piece"
+    },
+    {
+      "item": "rakinator:iron_piece"
+    },
+    {
+      "item": "rakinator:iron_piece"
+    },
+    {
+      "item": "rakinator:iron_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:iron_chunk",
+    "count": 1
+  }
+}

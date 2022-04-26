@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:blackstone_pebble"
+    },
+    {
+      "item": "rakinator:blackstone_pebble"
+    },
+    {
+      "item": "rakinator:blackstone_pebble"
+    },
+    {
+      "item": "rakinator:blackstone_pebble"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blackstone",
+    "count": 1
+  }
+}

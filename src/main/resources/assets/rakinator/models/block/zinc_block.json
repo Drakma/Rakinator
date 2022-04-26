@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_zinc",
+    "up": "rakinator:blocks/block_zinc",
+    "north": "rakinator:blocks/block_zinc",
+    "east": "rakinator:blocks/block_zinc",
+    "south": "rakinator:blocks/block_zinc",
+    "west": "rakinator:blocks/block_zinc",
+    "particle": "rakinator:blocks/block_zinc"
+  }
+}

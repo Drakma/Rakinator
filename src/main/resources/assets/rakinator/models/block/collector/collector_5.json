@@ -1,0 +1,12 @@
+{
+    "parent": "rakinator:custom/collector_5",
+    "textures": {
+        "all": "minecraft:block/oak_log",
+        "particle": "minecraft:block/glass",
+        "0": "minecraft:block/stone",
+        "1": "minecraft:block/glass",
+        "2": "minecraft:block/lapis_block",
+        "3": "minecraft:block/oak_log",
+        "4": "rakinator:blocks/blue_water_still"
+    }
+}

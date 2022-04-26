@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_aluminum",
+    "up": "rakinator:blocks/block_aluminum",
+    "north": "rakinator:blocks/block_aluminum",
+    "east": "rakinator:blocks/block_aluminum",
+    "south": "rakinator:blocks/block_aluminum",
+    "west": "rakinator:blocks/block_aluminum",
+    "particle": "rakinator:blocks/block_aluminum"
+  }
+}

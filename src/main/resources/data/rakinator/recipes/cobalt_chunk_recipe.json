@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:cobalt_piece"
+    },
+    {
+      "item": "rakinator:cobalt_piece"
+    },
+    {
+      "item": "rakinator:cobalt_piece"
+    },
+    {
+      "item": "rakinator:cobalt_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:cobalt_chunk",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "rakinator:custom/barrel_3",
+    "textures": {
+        "all": "minecraft:block/stone",
+        "particle": "minecraft:block/stone",
+        "0": "minecraft:block/stone",
+        "1": "minecraft:block/lava_still"
+    }
+}

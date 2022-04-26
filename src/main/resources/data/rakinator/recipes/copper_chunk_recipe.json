@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:copper_piece"
+    },
+    {
+      "item": "rakinator:copper_piece"
+    },
+    {
+      "item": "rakinator:copper_piece"
+    },
+    {
+      "item": "rakinator:copper_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:copper_chunk",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        " SC",
+        "S  "
+    ],
+    "key": {
+        "C": {
+            "tag": "forge:cobbles"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rakinator:stone_hammer",
+        "count": 1
+    }
+}

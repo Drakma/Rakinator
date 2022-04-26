@@ -1,0 +1,9 @@
+{
+    "parent": "rakinator:custom/barrel_6",
+    "textures": {
+        "all": "minecraft:block/oak_planks",
+        "particle": "minecraft:block/oak_planks",
+        "0": "minecraft:block/oak_planks",
+        "1": "rakinator:blocks/blue_water_still"
+    }
+}

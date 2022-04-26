@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "rakinator:cobalt_chunk"
+  },
+  "result": "rakinator:cobalt_ingot"
+}

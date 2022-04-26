@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:starmetal_piece"
+    },
+    {
+      "item": "rakinator:starmetal_piece"
+    },
+    {
+      "item": "rakinator:starmetal_piece"
+    },
+    {
+      "item": "rakinator:starmetal_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:starmetal_chunk",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "bucketlib:item/universal_bucket",
+  "textures": {
+    "base": "rakinator:items/test_bucket",
+    "lowerBase": "rakinator:items/test_bucket_lower",
+    "crackedBase": "rakinator:items/test_bucket_cracked",
+    "crackedLowerBase": "rakinator:items/test_bucket_cracked_lower"
+  }
+}

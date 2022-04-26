@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_starmetal",
+    "up": "rakinator:blocks/block_starmetal",
+    "north": "rakinator:blocks/block_starmetal",
+    "east": "rakinator:blocks/block_starmetal",
+    "south": "rakinator:blocks/block_starmetal",
+    "west": "rakinator:blocks/block_starmetal",
+    "particle": "rakinator:blocks/block_starmetal"
+  }
+}

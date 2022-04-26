@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/shattered_granite",
+    "up": "rakinator:blocks/shattered_granite",
+    "north": "rakinator:blocks/shattered_granite",
+    "east": "rakinator:blocks/shattered_granite",
+    "south": "rakinator:blocks/shattered_granite",
+    "west": "rakinator:blocks/shattered_granite",
+    "particle": "rakinator:blocks/shattered_granite"
+  }
+}

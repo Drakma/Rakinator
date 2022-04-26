@@ -1,0 +1,11 @@
+{
+    "parent": "rakinator:custom/composter_3",
+    "textures": {
+        "all": "minecraft:block/oak_log",
+        "particle": "minecraft:block/oak_log",
+        "0": "minecraft:block/stone",
+        "1": "minecraft:block/oak_planks",
+        "2": "minecraft:block/oak_log",
+        "3": "rakinator:blocks/compost"
+    }
+}

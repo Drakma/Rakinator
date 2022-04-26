@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_osmium",
+    "up": "rakinator:blocks/block_osmium",
+    "north": "rakinator:blocks/block_osmium",
+    "east": "rakinator:blocks/block_osmium",
+    "south": "rakinator:blocks/block_osmium",
+    "west": "rakinator:blocks/block_osmium",
+    "particle": "rakinator:blocks/block_osmium"
+  }
+}

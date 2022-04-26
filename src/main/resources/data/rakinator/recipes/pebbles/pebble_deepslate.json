@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:deepslate_pebble"
+    },
+    {
+      "item": "rakinator:deepslate_pebble"
+    },
+    {
+      "item": "rakinator:deepslate_pebble"
+    },
+    {
+      "item": "rakinator:deepslate_pebble"
+    }
+  ],
+  "result": {
+    "item": "minecraft:deepslate",
+    "count": 1
+  }
+}

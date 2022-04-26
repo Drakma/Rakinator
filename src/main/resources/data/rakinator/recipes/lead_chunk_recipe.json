@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:lead_piece"
+    },
+    {
+      "item": "rakinator:lead_piece"
+    },
+    {
+      "item": "rakinator:lead_piece"
+    },
+    {
+      "item": "rakinator:lead_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:lead_chunk",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:pieces/silver",
+        "#forge:pieces/elementium",
+        "#forge:pieces/dragonstone",
+        "#forge:pieces/soulstone",
+        "#forge:pieces/blazing_quartz",
+        "#forge:pieces/cobalt",
+        "#forge:pieces/copper",
+        "#forge:pieces/gold",
+        "#forge:pieces/zinc",
+        "#forge:pieces/starmetal",
+        "#forge:pieces/iron",
+        "#forge:pieces/lead"
+    ]
+}

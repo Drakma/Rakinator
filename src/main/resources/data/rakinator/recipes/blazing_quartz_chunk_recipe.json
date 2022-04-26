@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:blazing_quartz_piece"
+    },
+    {
+      "item": "rakinator:blazing_quartz_piece"
+    },
+    {
+      "item": "rakinator:blazing_quartz_piece"
+    },
+    {
+      "item": "rakinator:blazing_quartz_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:blazing_quartz_chunk",
+    "count": 1
+  }
+}

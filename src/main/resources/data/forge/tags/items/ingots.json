@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:ingots/silver",
+        "#forge:ingots/elementium",
+        "#forge:ingots/dragonstone",
+        "#forge:ingots/soulstone",
+        "#forge:ingots/blazing_quartz",
+        "#forge:ingots/cobalt",
+        "#forge:ingots/copper",
+        "#forge:ingots/gold",
+        "#forge:ingots/zinc",
+        "#forge:ingots/starmetal",
+        "#forge:ingots/iron",
+        "#forge:ingots/lead"
+    ]
+}

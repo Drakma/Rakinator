@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:silver_piece"
+    },
+    {
+      "item": "rakinator:silver_piece"
+    },
+    {
+      "item": "rakinator:silver_piece"
+    },
+    {
+      "item": "rakinator:silver_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:silver_chunk",
+    "count": 1
+  }
+}

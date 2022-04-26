@@ -1,0 +1,29 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      },
+      {
+        "value": "Blocks.LAVA"
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "Blocks.WALL_TORCH"
+      },
+      {
+        "value": "Blocks.CAMPFIRE"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "heat_blocks",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_iridium",
+    "up": "rakinator:blocks/block_iridium",
+    "north": "rakinator:blocks/block_iridium",
+    "east": "rakinator:blocks/block_iridium",
+    "south": "rakinator:blocks/block_iridium",
+    "west": "rakinator:blocks/block_iridium",
+    "particle": "rakinator:blocks/block_iridium"
+  }
+}

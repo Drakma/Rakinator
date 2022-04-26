@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_enderium",
+    "up": "rakinator:blocks/block_enderium",
+    "north": "rakinator:blocks/block_enderium",
+    "east": "rakinator:blocks/block_enderium",
+    "south": "rakinator:blocks/block_enderium",
+    "west": "rakinator:blocks/block_enderium",
+    "particle": "rakinator:blocks/block_enderium"
+  }
+}

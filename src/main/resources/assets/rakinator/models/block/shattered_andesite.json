@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/shattered_andestite",
+    "up": "rakinator:blocks/shattered_andestite",
+    "north": "rakinator:blocks/shattered_andestite",
+    "east": "rakinator:blocks/shattered_andestite",
+    "south": "rakinator:blocks/shattered_andestite",
+    "west": "rakinator:blocks/shattered_andestite",
+    "particle": "rakinator:blocks/shattered_andestite"
+  }
+}

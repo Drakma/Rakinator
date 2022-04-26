@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "fill=0": {
+            "model": "rakinator:block/composter_0"
+        },
+        "fill=1": {
+            "model": "rakinator:block/composter/composter_1"
+        },
+        "fill=2": {
+            "model": "rakinator:block/composter/composter_2"
+        },
+        "fill=3": {
+            "model": "rakinator:block/composter/composter_3"
+        },
+        "fill=4": {
+            "model": "rakinator:block/composter/composter_3"
+        },
+        "fill=5": {
+            "model": "rakinator:block/composter/composter_4"
+        },
+        "fill=6": {
+            "model": "rakinator:block/composter/composter_5"
+        },
+        "fill=7": {
+            "model": "rakinator:block/composter/composter_6"
+        },
+        "fill=8": {
+            "model": "rakinator:block/composter/composter_7"
+        },
+        "fill=9": {
+            "model": "rakinator:block/composter/composter_dirt"
+        }
+    }
+}

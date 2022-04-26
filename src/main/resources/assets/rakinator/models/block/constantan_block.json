@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/block_constantan",
+    "up": "rakinator:blocks/block_constantan",
+    "north": "rakinator:blocks/block_constantan",
+    "east": "rakinator:blocks/block_constantan",
+    "south": "rakinator:blocks/block_constantan",
+    "west": "rakinator:blocks/block_constantan",
+    "particle": "rakinator:blocks/block_constantan"
+  }
+}

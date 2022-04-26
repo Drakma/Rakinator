@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/dirt",
+    "up": "rakinator:blocks/enchanted_grass_top",
+    "north": "rakinator:blocks/enchanted_grass_sides",
+    "east": "rakinator:blocks/enchanted_grass_sides",
+    "south": "rakinator:blocks/enchanted_grass_sides",
+    "west": "rakinator:blocks/enchanted_grass_sides",
+    "particle": "rakinator:blocks/dirt"
+  }
+}

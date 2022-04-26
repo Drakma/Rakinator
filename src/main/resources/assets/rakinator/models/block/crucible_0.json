@@ -1,0 +1,11 @@
+{
+    "parent": "rakinator:custom/crucible_0",
+    "textures": {
+        "all": "minecraft:block/white_concrete",
+        "particle": "minecraft:block/white_concrete",
+        "0": "minecraft:block/stone",
+        "1": "minecraft:block/white_concrete",
+        "3": "minecraft:block/gray_concrete",
+        "4": "minecraft:block/black_concrete"
+    }
+}

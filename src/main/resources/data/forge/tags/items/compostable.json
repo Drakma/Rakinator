@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sugar_cane",
+    "rakinator:sugarcane_seed",
+    "minecraft:beef",
+    "rakinator:bamboo_seed",
+    "rakinator:enchanted_seed",
+    "minecraft:wheat",
+    "rakinator:oak_seed",
+    "minecraft:pufferfish",
+    "rakinator:kelp_seed",
+    "rakinator:potato_seed",
+    "minecraft:wheat_seeds",
+    "rakinator:birch_seed",
+    "minecraft:tropical_fish",
+    "minecraft:pumpkin_seeds",
+    "minecraft:rabbit",
+    "rakinator:acacia_seed",
+    "rakinator:dark_oak_seed",
+    "rakinator:cactus_seed",
+    "minecraft:melon_seeds",
+    "minecraft:mutton",
+    "rakinator:jungle_seed",
+    "rakinator:uraninite_piece",
+    "minecraft:salmon",
+    "minecraft:porkchop",
+    "rakinator:spruce_seed",
+    "rakinator:grass_seed",
+    "minecraft:dried_kelp",
+    "rakinator:carrot_seed"
+  ]
+}

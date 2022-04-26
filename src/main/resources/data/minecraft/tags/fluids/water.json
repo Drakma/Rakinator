@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "rakinator:salt_water_fluid",
+    "rakinator:flowing_salt_water_fluid",
+    "rakinator:enchanted_water_fluid",
+    "rakinator:flowing_enchanted_water_fluid",
+    "rakinator:murky_water_fluid",
+    "rakinator:flowing_murky_water_fluid",
+    "rakinator:spilled_milk_fluid",
+    "rakinator:flowing_spilled_milk_fluid"
+  ]
+}

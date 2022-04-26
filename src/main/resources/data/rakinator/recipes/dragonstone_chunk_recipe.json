@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:dragonstone_piece"
+    },
+    {
+      "item": "rakinator:dragonstone_piece"
+    },
+    {
+      "item": "rakinator:dragonstone_piece"
+    },
+    {
+      "item": "rakinator:dragonstone_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:dragonstone_chunk",
+    "count": 1
+  }
+}

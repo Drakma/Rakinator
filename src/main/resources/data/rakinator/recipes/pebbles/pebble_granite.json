@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:granite_pebble"
+    },
+    {
+      "item": "rakinator:granite_pebble"
+    },
+    {
+      "item": "rakinator:granite_pebble"
+    },
+    {
+      "item": "rakinator:granite_pebble"
+    }
+  ],
+  "result": {
+    "item": "minecraft:granite",
+    "count": 1
+  }
+}

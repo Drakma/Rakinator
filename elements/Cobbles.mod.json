@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      },
+      {
+        "value": "Blocks.MOSSY_COBBLESTONE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "cobbles",
+    "namespace": "forge"
+  }
+}

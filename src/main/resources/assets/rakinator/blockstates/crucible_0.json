@@ -1,0 +1,31 @@
+{
+    "variants": {
+        "fill=0": {
+            "model": "rakinator:block/crucible_0"
+        },
+        "fill=1": {
+            "model": "rakinator:block/crucible/crucible_1"
+        },
+        "fill=2": {
+            "model": "rakinator:block/crucible/crucible_2"
+        },
+        "fill=3": {
+            "model": "rakinator:block/crucible/crucible_3"
+        },
+        "fill=4": {
+            "model": "rakinator:block/crucible/crucible_4"
+        },
+        "fill=5": {
+            "model": "rakinator:block/crucible/crucible_5"
+        },
+        "fill=6": {
+            "model": "rakinator:block/crucible/crucible_6"
+        },
+        "fill=7": {
+            "model": "rakinator:block/crucible/crucible_7"
+        },
+        "fill=8": {
+            "model": "rakinator:block/crucible/crucible_7"
+        }
+    }
+}

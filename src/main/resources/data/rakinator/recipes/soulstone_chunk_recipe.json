@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:soulstone_piece"
+    },
+    {
+      "item": "rakinator:soulstone_piece"
+    },
+    {
+      "item": "rakinator:soulstone_piece"
+    },
+    {
+      "item": "rakinator:soulstone_piece"
+    }
+  ],
+  "result": {
+    "item": "rakinator:soulstone_chunk",
+    "count": 1
+  }
+}

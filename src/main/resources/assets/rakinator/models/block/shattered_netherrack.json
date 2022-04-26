@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rakinator:blocks/shattered_netherrack",
+    "up": "rakinator:blocks/shattered_netherrack",
+    "north": "rakinator:blocks/shattered_netherrack",
+    "east": "rakinator:blocks/shattered_netherrack",
+    "south": "rakinator:blocks/shattered_netherrack",
+    "west": "rakinator:blocks/shattered_netherrack",
+    "particle": "rakinator:blocks/shattered_netherrack"
+  }
+}

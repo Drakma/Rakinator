@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rakinator:diorite_pebble"
+    },
+    {
+      "item": "rakinator:diorite_pebble"
+    },
+    {
+      "item": "rakinator:diorite_pebble"
+    },
+    {
+      "item": "rakinator:diorite_pebble"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diorite",
+    "count": 1
+  }
+}
