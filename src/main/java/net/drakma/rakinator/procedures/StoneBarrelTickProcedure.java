@@ -28,7 +28,7 @@ import net.drakma.rakinator.init.RakinatorModBlocks;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class WoodenBarrelTickProcedure {
+public class StoneBarrelTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		double TankLevel = 0;
 		double InventoryLevel = 0;
@@ -57,6 +57,26 @@ public class WoodenBarrelTickProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getTileData().putString("fluid", "transform_enchanted");
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
+		}
+		if (TankLevel >= 1000 && (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("lava")) {
+			if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.MYCELIUM) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = new BlockPos(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getTileData().putString("fluid", "transform_netherrack");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -120,6 +140,90 @@ public class WoodenBarrelTickProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getTileData().putString("fluid", "enchanted_water");
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("timer", (1 + new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos(x, y, z), "timer")));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		}
+		if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("transform_netherrack")) {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos(x, y, z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.bubble_column.bubble_pop")), SoundSource.NEUTRAL, 1, 0);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.bubble_column.bubble_pop")),
+							SoundSource.NEUTRAL, 1, 0, false);
+				}
+			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.LAVA, (x + 0.5), (y + 0.8), (z + 0.5), 2, 0.2, 1, 0.2, 0);
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, new BlockPos(x, y, z), "timer") == RakinatorModVariables.barrel_time_between_filling) {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.LARGE_SMOKE, (x + 0.5), (y + 0.8), (z + 0.5), 20, 0.2, 1, 0.2, 0);
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					int _amount = 1000;
+					if (_ent != null)
+						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+								.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+				}
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = 0;
+						final ItemStack _setstack = new ItemStack(Blocks.NETHERRACK);
+						_setstack.setCount(1);
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable)
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+						});
+					}
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = new BlockPos(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getTileData().putDouble("timer", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = new BlockPos(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getTileData().putString("fluid", "netherrack");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -567,9 +671,25 @@ public class WoodenBarrelTickProcedure {
 					return blockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("salt_water")) {
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("lava")) {
 			{
 				int _value = 11;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("salt_water")) {
+			{
+				int _value = 12;
 				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = world.getBlockState(_pos);
 				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
@@ -586,6 +706,38 @@ public class WoodenBarrelTickProcedure {
 		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("mycelium")) {
 			{
 				int _value = 13;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("transform_netherrack")) {
+			{
+				int _value = 11;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("netherrack")) {
+			{
+				int _value = 14;
 				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = world.getBlockState(_pos);
 				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");

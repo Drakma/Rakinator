@@ -27,17 +27,18 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.drakma.rakinator.init.RakinatorModBlockEntities;
+import net.drakma.rakinator.init.RakinatorModFluids;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class StoneBarrel0BlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(0, ItemStack.EMPTY);
+public class StoneBarrelBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public StoneBarrel0BlockEntity(BlockPos position, BlockState state) {
-		super(RakinatorModBlockEntities.STONE_BARREL_0.get(), position, state);
+	public StoneBarrelBlockEntity(BlockPos position, BlockState state) {
+		super(RakinatorModBlockEntities.STONE_BARREL.get(), position, state);
 	}
 
 	@Override
@@ -94,7 +95,7 @@ public class StoneBarrel0BlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public int getMaxStackSize() {
-		return 64;
+		return 1;
 	}
 
 	@Override
@@ -138,10 +139,19 @@ public class StoneBarrel0BlockEntity extends RandomizableContainerBlockEntity im
 	}
 
 	private final FluidTank fluidTank = new FluidTank(1000, fs -> {
-		if (fs.getFluid() == Fluids.FLOWING_LAVA)
+		if (fs.getFluid() == Fluids.WATER)
 			return true;
 		if (fs.getFluid() == Fluids.LAVA)
 			return true;
+		if (fs.getFluid() == RakinatorModFluids.SALT_WATER_FLUID.get())
+			return true;
+		if (fs.getFluid() == RakinatorModFluids.ENCHANTED_WATER_FLUID.get())
+			return true;
+		if (fs.getFluid() == RakinatorModFluids.MURKY_WATER_FLUID.get())
+			return true;
+		if (fs.getFluid() == RakinatorModFluids.SPILLED_MILK_FLUID.get())
+			return true;
+
 		return false;
 	}) {
 		@Override

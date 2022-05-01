@@ -20,7 +20,7 @@ import net.drakma.rakinator.block.UraniumBlockBlock;
 import net.drakma.rakinator.block.TungstenBlockBlock;
 import net.drakma.rakinator.block.TitaniumBlockBlock;
 import net.drakma.rakinator.block.TemeriumBlockBlock;
-import net.drakma.rakinator.block.StoneBarrel0Block;
+import net.drakma.rakinator.block.StoneBarrelBlock;
 import net.drakma.rakinator.block.SteelBlockBlock;
 import net.drakma.rakinator.block.StarmetalBlockBlock;
 import net.drakma.rakinator.block.SpilledMilkFluidBlock;
@@ -73,7 +73,6 @@ public class RakinatorModBlocks {
 	public static final RegistryObject<Block> SHATTERED_SKYSTONE = REGISTRY.register("shattered_skystone", () -> new ShatteredSkystoneBlock());
 	public static final RegistryObject<Block> ENCHANTED_GRASS = REGISTRY.register("enchanted_grass", () -> new EnchantedGrassBlock());
 	public static final RegistryObject<Block> WOODEN_BARREL_0 = REGISTRY.register("wooden_barrel_0", () -> new WoodenBarrel0Block());
-	public static final RegistryObject<Block> STONE_BARREL_0 = REGISTRY.register("stone_barrel_0", () -> new StoneBarrel0Block());
 	public static final RegistryObject<Block> CRUCIBLE_0 = REGISTRY.register("crucible_0", () -> new Crucible0Block());
 	public static final RegistryObject<Block> COLLECTOR_0 = REGISTRY.register("collector_0", () -> new Collector0Block());
 	public static final RegistryObject<Block> COMPOSTER_0 = REGISTRY.register("composter_0", () -> new Composter0Block());
@@ -109,16 +108,17 @@ public class RakinatorModBlocks {
 	public static final RegistryObject<Block> URANIUM_BLOCK = REGISTRY.register("uranium_block", () -> new UraniumBlockBlock());
 	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
 	public static final RegistryObject<Block> TEMERIUM_BLOCK = REGISTRY.register("temerium_block", () -> new TemeriumBlockBlock());
+	public static final RegistryObject<Block> STONE_BARREL = REGISTRY.register("stone_barrel", () -> new StoneBarrelBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			WoodenBarrel0Block.registerRenderLayer();
-			StoneBarrel0Block.registerRenderLayer();
 			Crucible0Block.registerRenderLayer();
 			Collector0Block.registerRenderLayer();
 			Composter0Block.registerRenderLayer();
+			StoneBarrelBlock.registerRenderLayer();
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
     "variants": {
         "fill=0": {
-            "model": "rakinator:block/stone_barrel_0"
+            "model": "rakinator:block/stone_barrel"
         },
         "fill=1": {
             "model": "rakinator:block/stone_barrel/stone_barrel_1"
@@ -25,7 +25,25 @@
             "model": "rakinator:block/stone_barrel/stone_barrel_7"
         },
         "fill=8": {
-            "model": "rakinator:block/stone_barrel/stone_barrel_7"
+            "model": "rakinator:block/stone_barrel/stone_barrel_clay"
+        },
+        "fill=9": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_enchanted_water"
+        },
+        "fill=11": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_lava"
+        },
+        "fill=10": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_murky_water"
+        },
+        "fill=12": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_salt_water"
+        },
+        "fill=13": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_mycelium"
+        },
+        "fill=14": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_netherrack"
         }
     }
 }

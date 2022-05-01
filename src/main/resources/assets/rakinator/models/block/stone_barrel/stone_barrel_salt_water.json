@@ -1,9 +1,9 @@
 {
-    "parent": "rakinator:custom/barrel_5",
+    "parent": "rakinator:custom/barrel_7",
     "textures": {
         "all": "minecraft:block/stone",
         "particle": "minecraft:block/stone",
         "0": "minecraft:block/stone",
-        "1": "rakinator:blocks/blue_water_still"
+        "1": "rakinator:blocks/salt_water_still"
     }
 }

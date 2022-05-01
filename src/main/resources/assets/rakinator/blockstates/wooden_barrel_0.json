@@ -30,14 +30,17 @@
         "fill=9": {
             "model": "rakinator:block/wooden_barrel/wooden_barrel_enchanted_water"
         },
-        "fill=10": {
+        "fill=11": {
             "model": "rakinator:block/wooden_barrel/wooden_barrel_milk"
         },
-        "fill=11": {
+        "fill=10": {
             "model": "rakinator:block/wooden_barrel/wooden_barrel_murky_water"
         },
         "fill=12": {
             "model": "rakinator:block/wooden_barrel/wooden_barrel_salt_water"
+        },
+        "fill=13": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_mycelium"
         }
     }
 }

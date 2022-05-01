@@ -171,7 +171,6 @@ public class RakinatorModItems {
 			RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> ENCHANTED_GRASS = block(RakinatorModBlocks.ENCHANTED_GRASS, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> WOODEN_BARREL_0 = block(RakinatorModBlocks.WOODEN_BARREL_0, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
-	public static final RegistryObject<Item> STONE_BARREL_0 = block(RakinatorModBlocks.STONE_BARREL_0, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> CRUCIBLE_0 = block(RakinatorModBlocks.CRUCIBLE_0, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> COLLECTOR_0 = block(RakinatorModBlocks.COLLECTOR_0, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> COMPOSTER_0 = block(RakinatorModBlocks.COMPOSTER_0, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
@@ -327,6 +326,7 @@ public class RakinatorModItems {
 	public static final RegistryObject<Item> TEMERIUM_BLOCK = block(RakinatorModBlocks.TEMERIUM_BLOCK, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> CERAMIC_BUCKET_MILK = REGISTRY.register("ceramic_bucket_milk", () -> new CeramicBucketMilkItem());
 	public static final RegistryObject<Item> WOODEN_BUCKET_MILK = REGISTRY.register("wooden_bucket_milk", () -> new WoodenBucketMilkItem());
+	public static final RegistryObject<Item> STONE_BARREL = block(RakinatorModBlocks.STONE_BARREL, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

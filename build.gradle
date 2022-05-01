@@ -58,5 +58,41 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+    // location of the maven that hosts JEI files
+    	name = "Progwml6 maven"
+    	url = "https://dvs1.progwml6.com/files/maven/"
+  	}
+  	maven {
+    // location of a maven mirror for JEI files, as a fallback
+    	name = "ModMaven"
+    	url = "https://modmaven.dev"
+  	}
+}
+
+dependencies {
+   	//compileOnly fg.deobf("curse.maven:pipez-443900:3736957")
+   	runtimeOnly fg.deobf("curse.maven:top-245211:3671753")
+
+   	//compileOnly fg.deobf("curse.maven:pipez-443900:3736957")
+   	runtimeOnly fg.deobf("curse.maven:pipez-443900:3736957")
+
+   	//compileOnly fg.deobf("curse.maven:configured-457570:3721946")
+   	runtimeOnly fg.deobf("curse.maven:configured-457570:3721946")
+
+   	//compileOnly fg.deobf("curse.maven:construction-wand-399558:3712396")
+   	runtimeOnly fg.deobf("curse.maven:construction-wand-399558:3712396")
+
+   	//compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174:api")
+	runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174")
+}
+
 apply from: 'mcreator.gradle'
 

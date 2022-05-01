@@ -677,15 +677,6 @@
       "path": "~/blocks"
     },
     {
-      "name": "StoneBarrel0",
-      "type": "block",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "stone_barrel_0",
-      "path": "~/blocks"
-    },
-    {
       "name": "Crucible0",
       "type": "block",
       "sortid": 24,
@@ -980,72 +971,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crucible_0_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
-      "name": "StoneBarrel0RightClick",
-      "type": "procedure",
-      "sortid": 187,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_barrel_0_right_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
-      "name": "StoneBarrel0Tick",
-      "type": "procedure",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_barrel_0_tick",
       "metadata": {
         "dependencies": [
           {
@@ -3427,6 +3352,85 @@
       "locked_code": false,
       "registry_name": "wooden_bucket_milk",
       "path": "~/food"
+    },
+    {
+      "name": "StoneBarrel",
+      "type": "block",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_barrel",
+      "path": "~/blocks"
+    },
+    {
+      "name": "StoneBarrelTick",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_barrel_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "StoneBarrelRightClick",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_barrel_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blocks"
     }
   ],
   "variable_elements": [
@@ -3620,7 +3624,6 @@
       "item.rakinator.cobalt_chunk": "Cobalt Chunk",
       "block.rakinator.platinum_block": "Platinum Block",
       "item.rakinator.lumium_ingot": "Lumium Ingot",
-      "block.rakinator.stone_barrel_0": "Wooden Barrel",
       "item.rakinator.soulstone_piece": "Soulstone Piece",
       "item.rakinator.spruce_seed": "Spruce Seed",
       "block.rakinator.titanium_block": "Titanium Block",
@@ -3632,6 +3635,7 @@
       "item.rakinator.kelp_seed": "Kelp Seed",
       "fluid.rakinator.spilled_milk_fluid": "Spilled Milk Fluid",
       "block.rakinator.salt_water_fluid": "Salt Water",
+      "block.rakinator.stone_barrel": "Stone Barrel",
       "item.rakinator.salt_water_fluid_bucket": "Salt Water Bucket",
       "item.rakinator.mithril_dust": "Mithril Dust",
       "block.rakinator.lead_block": "Lead Block",

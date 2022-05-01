@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "stone",
+    "texture": "oak_planks",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "CUSTOM:RakinatorCreativeTab"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 1,
     "tickRandomly": false,
@@ -73,11 +73,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "IGNORE",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -107,9 +107,9 @@
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 0,
-    "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": false,
+    "inventorySize": 1,
+    "inventoryStackSize": 1,
+    "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
@@ -122,6 +122,12 @@
     "fluidCapacity": 1000,
     "fluidRestrictions": [
       {
+        "value": "FLOWING_WATER"
+      },
+      {
+        "value": "WATER"
+      },
+      {
         "value": "FLOWING_LAVA"
       },
       {
@@ -129,13 +135,13 @@
       }
     ],
     "onRightClicked": {
-      "name": "StoneBarrel0RightClick"
+      "name": "WoodenBarrelOnBlockRightClicked"
     },
     "onBlockAdded": {
       "name": "InitBarrel"
     },
     "onTickUpdate": {
-      "name": "StoneBarrel0Tick"
+      "name": "WoodenBarrelTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

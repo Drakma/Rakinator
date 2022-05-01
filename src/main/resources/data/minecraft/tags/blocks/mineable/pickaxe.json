@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "rakinator:stone_barrel_0",
     "rakinator:crucible_0",
     "rakinator:temerium_block"
   ]

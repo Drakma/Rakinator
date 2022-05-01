@@ -17,6 +17,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import net.drakma.rakinator.network.RakinatorModVariables;
@@ -143,6 +144,7 @@ public class Crucible0TickProcedure {
 		}.getFluidTankLevel(world, new BlockPos(x, y, z), 1);
 		if ((blockstate.getBlock().getStateDefinition().getProperty("fill") instanceof IntegerProperty _ip ? blockstate.getValue(_ip) : -1) != 8) {
 			if (CurrentLevel >= 1000) {
+				world.addParticle(ParticleTypes.LAVA, x, y, z, 0, 1, 0);
 				{
 					int _value = 7;
 					BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
@@ -152,6 +154,7 @@ public class Crucible0TickProcedure {
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 			} else if (CurrentLevel >= 800 && CurrentLevel < 1000) {
+				world.addParticle(ParticleTypes.LAVA, x, y, z, 0, 1, 0);
 				{
 					int _value = 6;
 					BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);

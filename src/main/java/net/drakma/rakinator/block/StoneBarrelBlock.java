@@ -34,37 +34,36 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.drakma.rakinator.procedures.WoodenBarrelTickProcedure;
-import net.drakma.rakinator.procedures.WoodenBarrelOnBlockRightClickedProcedure;
-import net.drakma.rakinator.procedures.InitBarrelProcedure;
+import net.drakma.rakinator.procedures.StoneBarrelTickProcedure;
+import net.drakma.rakinator.procedures.StoneBarrelRightClickProcedure;
 import net.drakma.rakinator.init.RakinatorModBlocks;
-import net.drakma.rakinator.block.entity.WoodenBarrel0BlockEntity;
+import net.drakma.rakinator.block.entity.StoneBarrelBlockEntity;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-public class WoodenBarrel0Block extends Block
+public class StoneBarrelBlock extends Block
 		implements
 
 			EntityBlock {
 			
-	public static final IntegerProperty WOODEN_BARREL_LEVEL = IntegerProperty.create("fill", 0, 13);
+	public static final IntegerProperty STONE_BARREL_LEVEL = IntegerProperty.create("fill", 0, 14);
 	
-	protected WoodenBarrel0Block(Properties builder) {
+	protected StoneBarrelBlock(Properties builder) {
 		super(builder);
 		this.registerDefaultState(this.defaultBlockState()
-			.setValue(WOODEN_BARREL_LEVEL, 0));
+			.setValue(STONE_BARREL_LEVEL, 0));
 	}
 	
 	@Override
 		protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-			builder.add(WOODEN_BARREL_LEVEL);
+			builder.add(STONE_BARREL_LEVEL);
 	}
 
 			
-	public WoodenBarrel0Block() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
+	public StoneBarrelBlock() {
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
@@ -104,7 +103,6 @@ public class WoodenBarrel0Block extends Block
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
-		//InitBarrelProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -114,7 +112,7 @@ public class WoodenBarrel0Block extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		WoodenBarrelTickProcedure.execute(world, x, y, z, blockstate);
+		StoneBarrelTickProcedure.execute(world, x, y, z, blockstate);
 		world.scheduleTick(pos, this, 1);
 	}
 
@@ -129,7 +127,7 @@ public class WoodenBarrel0Block extends Block
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		WoodenBarrelOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate, entity);
+		StoneBarrelRightClickProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 
@@ -141,7 +139,7 @@ public class WoodenBarrel0Block extends Block
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new WoodenBarrel0BlockEntity(pos, state);
+		return new StoneBarrelBlockEntity(pos, state);
 	}
 
 	@Override
@@ -159,7 +157,7 @@ public class WoodenBarrel0Block extends Block
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof WoodenBarrel0BlockEntity be)
+		if (tileentity instanceof StoneBarrelBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
@@ -167,7 +165,7 @@ public class WoodenBarrel0Block extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RakinatorModBlocks.WOODEN_BARREL_0.get(), renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(RakinatorModBlocks.STONE_BARREL.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }
