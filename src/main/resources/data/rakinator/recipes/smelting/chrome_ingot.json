@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "experience": 0,
+    "cookingtime": 200,
+    "ingredient": {
+        "item": "rakinator:chrome_dust"
+    },
+    "result": "rakinator:chrome_ingot"
+}

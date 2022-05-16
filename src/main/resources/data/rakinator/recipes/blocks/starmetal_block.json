@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BBB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "rakinator:starmetal_ingot"
+        }
+    },
+    "result": {
+        "item": "rakinator:starmetal_block",
+        "count": 1
+    }
+}

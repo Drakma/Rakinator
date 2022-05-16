@@ -1,17 +1,24 @@
 {
-  "replace": false,
-  "values": [
-    "#forge:ores/silver",
-    "#forge:ores/elementium",
-    "#forge:ores/dragonstone",
-    "#forge:ores/soulstone",
-    "#forge:ores/blazing_quartz",
-    "#forge:ores/cobalt",
-    "#forge:ores/copper",
-    "#forge:ores/gold",
-    "#forge:ores/zinc",
-    "#forge:ores/starmetal",
-    "#forge:ores/iron",
-    "#forge:ores/lead"
-  ]
+    "replace": false,
+    "values": [
+        "#forge:ores/aluminum",
+        "#forge:ores/blazing_quartz",
+        "#forge:ores/cobalt",
+        "#forge:ores/copper",
+        "#forge:ores/dragonstone",
+        "#forge:ores/elementium",
+        "#forge:ores/gold",
+        "#forge:ores/iridium",
+        "#forge:ores/iron",
+        "#forge:ores/lead",
+        "#forge:ores/osmium",
+        "#forge:ores/platinum",
+        "#forge:ores/silver",
+        "#forge:ores/soulstone",
+        "#forge:ores/starmetal",
+        "#forge:ores/tin",
+        "#forge:ores/titanium",
+        "#forge:ores/tungsten",
+        "#forge:ores/zinc"
+    ]
 }

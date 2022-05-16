@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+            "item": "rakinator:osmium_piece"
+        },
+        {
+            "item": "rakinator:osmium_piece"
+        },
+        {
+            "item": "rakinator:osmium_piece"
+        },
+        {
+            "item": "rakinator:osmium_piece"
+        }
+    ],
+    "result": {
+        "item": "rakinator:osmium_chunk",
+        "count": 1
+    }
+}

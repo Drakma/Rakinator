@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WWW",
+        "G G",
+        "SSS"
+    ],
+    "key": {
+        "W": {
+            "tag": "minecraft:wool"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "S": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "rakinator:collector_0",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BBB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "rakinator:constantan_ingot"
+        }
+    },
+    "result": {
+        "item": "rakinator:constantan_block",
+        "count": 1
+    }
+}

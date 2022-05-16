@@ -1,17 +1,24 @@
 {
     "replace": false,
     "values": [
-        "#forge:pieces/silver",
-        "#forge:pieces/elementium",
-        "#forge:pieces/dragonstone",
-        "#forge:pieces/soulstone",
+        "#forge:pieces/aluminum",
         "#forge:pieces/blazing_quartz",
         "#forge:pieces/cobalt",
         "#forge:pieces/copper",
+        "#forge:pieces/dragonstone",
+        "#forge:pieces/elementium",
         "#forge:pieces/gold",
-        "#forge:pieces/zinc",
-        "#forge:pieces/starmetal",
+        "#forge:pieces/iridium",
         "#forge:pieces/iron",
-        "#forge:pieces/lead"
+        "#forge:pieces/lead",
+        "#forge:pieces/osmium",
+        "#forge:pieces/platinum",
+        "#forge:pieces/silver",
+        "#forge:pieces/soulstone",
+        "#forge:pieces/starmetal",
+        "#forge:pieces/tin",
+        "#forge:pieces/titanium",
+        "#forge:pieces/tungsten",
+        "#forge:pieces/zinc"
     ]
 }

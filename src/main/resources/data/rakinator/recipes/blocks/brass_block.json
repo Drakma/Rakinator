@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BBB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "rakinator:brass_ingot"
+        }
+    },
+    "result": {
+        "item": "rakinator:brass_block",
+        "count": 1
+    }
+}

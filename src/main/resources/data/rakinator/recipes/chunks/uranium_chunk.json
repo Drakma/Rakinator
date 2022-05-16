@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+            "item": "rakinator:uranium_piece"
+        },
+        {
+            "item": "rakinator:uranium_piece"
+        },
+        {
+            "item": "rakinator:uranium_piece"
+        },
+        {
+            "item": "rakinator:uranium_piece"
+        }
+    ],
+    "result": {
+        "item": "rakinator:uranium_chunk",
+        "count": 1
+    }
+}

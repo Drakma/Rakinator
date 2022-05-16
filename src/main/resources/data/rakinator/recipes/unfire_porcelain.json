@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+            "item": "minecraft:bone_meal"
+        },
+        {
+            "item": "minecraft:clay_ball"
+        }
+    ],
+    "result": {
+        "item": "rakinator:unfired_ceramic",
+        "count": 1
+    }
+}

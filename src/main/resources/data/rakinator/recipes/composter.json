@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "SSS",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "tag": "forge:planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "rakinator:composter_0",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        "P P",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "item": "rakinator:porcelain_brick"
+        }
+    },
+    "result": {
+        "item": "rakinator:crucible_0",
+        "count": 1
+    }
+}

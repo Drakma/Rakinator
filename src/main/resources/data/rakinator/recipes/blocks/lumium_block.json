@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BBB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "rakinator:lumium_ingot"
+        }
+    },
+    "result": {
+        "item": "rakinator:lumium_block",
+        "count": 1
+    }
+}

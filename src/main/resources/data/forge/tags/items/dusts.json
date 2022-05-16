@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:dusts/chrome",
+        "#forge:dusts/graphite",
+        "#forge:dusts/mithril",
+        "#forge:dusts/saltpeter",
+        "#forge:dusts/silicon",
+        "#forge:dusts/sulfur"
+    ]
+}

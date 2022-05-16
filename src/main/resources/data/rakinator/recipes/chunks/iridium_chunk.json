@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+            "item": "rakinator:iridium_piece"
+        },
+        {
+            "item": "rakinator:iridium_piece"
+        },
+        {
+            "item": "rakinator:iridium_piece"
+        },
+        {
+            "item": "rakinator:iridium_piece"
+        }
+    ],
+    "result": {
+        "item": "rakinator:iridium_chunk",
+        "count": 1
+    }
+}

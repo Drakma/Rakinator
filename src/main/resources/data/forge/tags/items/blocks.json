@@ -1,0 +1,31 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:blocks/aluminum",
+        "#forge:blocks/brass",
+        "#forge:blocks/bronze",
+        "#forge:blocks/chrome",
+        "#forge:blocks/cobalt",
+        "#forge:blocks/constantan",
+        "#forge:blocks/dragonstone",
+        "#forge:blocks/electrum",
+        "#forge:blocks/elementium",
+        "#forge:blocks/enderium",
+        "#forge:blocks/gold",
+        "#forge:blocks/invar",
+        "#forge:blocks/iridium",
+        "#forge:blocks/iron",
+        "#forge:blocks/lead",
+        "#forge:blocks/lumium",
+        "#forge:blocks/osmium",
+        "#forge:blocks/platinum",
+        "#forge:blocks/silver",
+        "#forge:blocks/soulstone",
+        "#forge:blocks/starmetal",
+        "#forge:blocks/steel",
+        "#forge:blocks/tin",
+        "#forge:blocks/titanium",
+        "#forge:blocks/tungsten",
+        "#forge:blocks/zinc"
+    ]
+}

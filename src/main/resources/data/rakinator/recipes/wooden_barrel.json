@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "P P",
+        "P P",
+        "PSP"
+    ],
+    "key": {
+        "P": {
+            "tag": "forge:planks"
+        },
+        "S": {
+            "tag": "forge:wooden_slabs"
+        }
+    },
+    "result": {
+        "item": "rakinator:wooden_barrel_0",
+        "count": 1
+    }
+}
