@@ -16,7 +16,7 @@
     "attackSpeed": 1.0,
     "enchantability": 0,
     "damageVsEntity": 0.0,
-    "usageCount": 50,
+    "usageCount": 250,
     "blocksAffected": [
       {
         "value": "Blocks.LEAVES"
@@ -29,15 +29,39 @@
       },
       {
         "value": "CUSTOM:Dust"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "CUSTOM:ShatteredAndesite"
+      },
+      {
+        "value": "CUSTOM:ShatteredDiorite"
+      },
+      {
+        "value": "CUSTOM:ShatteredEndStone"
+      },
+      {
+        "value": "CUSTOM:ShatteredGranite"
+      },
+      {
+        "value": "CUSTOM:ShatteredNetherrack"
+      },
+      {
+        "value": "CUSTOM:ShatteredSkystone"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.SAND#0"
       }
     ],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "WoodenRakeAction"
-    }
+    "damageOnCrafting": false
   }
 }

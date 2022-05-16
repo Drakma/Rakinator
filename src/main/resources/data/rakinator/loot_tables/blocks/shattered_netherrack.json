@@ -1,0 +1,343 @@
+{
+    "type": "minecraft:block",
+    "pools": [{
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "items": [
+                            "rakinator:wooden_rake",
+                            "rakinator:stone_rake",
+                            "rakinator:iron_rake",
+                            "rakinator:diamond_rake",
+                            "rakinator:emerald_rake",
+                            "rakinator:netherite_rake"
+                        ]
+                    }
+                }
+            }],
+            "entries": [{
+                "type": "minecraft:item",
+                "name": "rakinator:shattered_netherrack"
+            }],
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": 1
+            }]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:wooden_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.025
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:stone_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.9
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.075
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:iron_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.8
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.075
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:diamond_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.7
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.125
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 4,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:emerald_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.6
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.125
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 5,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:netherite_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulium_crystal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sulfur_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.175
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        }
+    ]
+}

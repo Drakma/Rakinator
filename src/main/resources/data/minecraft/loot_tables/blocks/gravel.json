@@ -1,0 +1,1159 @@
+{
+    "type": "minecraft:block",
+    "pools": [{
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "items": [
+                            "rakinator:wooden_rake",
+                            "rakinator:stone_rake",
+                            "rakinator:iron_rake",
+                            "rakinator:diamond_rake",
+                            "rakinator:emerald_rake",
+                            "rakinator:netherite_rake"
+                        ]
+                    }
+                }
+            }],
+            "entries": [{
+                "type": "minecraft:item",
+                "name": "minecraft:gravel"
+            }],
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": 1
+            }]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:wooden_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.02
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.75
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.002
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.002
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:stone_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.9
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.02
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.8
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.005
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.005
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:iron_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.8
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.95
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.9
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.025
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.025
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.45
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:diamond_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.7
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.45
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 4,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:emerald_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.6
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.35
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.075
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.075
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 5,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:netherite_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blazing_quartz_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tin_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobalt_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:copper_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dragonstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:elementium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:gold_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iridium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:iron_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:lead_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:silver_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:soulstone_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:starmetal_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:titanium_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tungsten_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:uraninite_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:zinc_piece",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.10
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.10
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                }
+            ]
+        }
+    ]
+}

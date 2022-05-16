@@ -19,6 +19,7 @@ import net.drakma.rakinator.block.WoodenBarrel0Block;
 import net.drakma.rakinator.block.UraniumBlockBlock;
 import net.drakma.rakinator.block.TungstenBlockBlock;
 import net.drakma.rakinator.block.TitaniumBlockBlock;
+import net.drakma.rakinator.block.TinBlockBlock;
 import net.drakma.rakinator.block.TemeriumBlockBlock;
 import net.drakma.rakinator.block.StoneBarrelBlock;
 import net.drakma.rakinator.block.SteelBlockBlock;
@@ -58,6 +59,7 @@ import net.drakma.rakinator.block.CobaltBlockBlock;
 import net.drakma.rakinator.block.ChromeBlockBlock;
 import net.drakma.rakinator.block.BronzeBlockBlock;
 import net.drakma.rakinator.block.BrassBlockBlock;
+import net.drakma.rakinator.block.BlazeBlockBlock;
 import net.drakma.rakinator.block.AluminumBlockBlock;
 import net.drakma.rakinator.RakinatorMod;
 
@@ -109,6 +111,8 @@ public class RakinatorModBlocks {
 	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
 	public static final RegistryObject<Block> TEMERIUM_BLOCK = REGISTRY.register("temerium_block", () -> new TemeriumBlockBlock());
 	public static final RegistryObject<Block> STONE_BARREL = REGISTRY.register("stone_barrel", () -> new StoneBarrelBlock());
+	public static final RegistryObject<Block> TIN_BLOCK = REGISTRY.register("tin_block", () -> new TinBlockBlock());
+	public static final RegistryObject<Block> BLAZE_BLOCK = REGISTRY.register("blaze_block", () -> new BlazeBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

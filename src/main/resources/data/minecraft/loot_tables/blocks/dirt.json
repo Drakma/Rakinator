@@ -1,0 +1,1303 @@
+{
+    "type": "minecraft:block",
+    "pools": [{
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "items": [
+                            "rakinator:wooden_rake",
+                            "rakinator:stone_rake",
+                            "rakinator:iron_rake",
+                            "rakinator:diamond_rake",
+                            "rakinator:emerald_rake",
+                            "rakinator:netherite_rake"
+                        ]
+                    }
+                }
+            }],
+            "entries": [{
+                "type": "minecraft:item",
+                "name": "minecraft:dirt"
+            }],
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": 1
+            }]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:wooden_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.075
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.05
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:stone_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.9
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:iron_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.8
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.225
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:diamond_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.7
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.2
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 4,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:emerald_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.6
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.45
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 5,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:netherite_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cactus_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:carrot_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:kelp_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:potato_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:sugarcane_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:spruce_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:acacia_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:birch_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:dark_oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:jungle_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:oak_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:bamboo_seed",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:andesite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.5
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:blackstone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:cobblestone_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.6
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:deepslate_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:granite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:tuff_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:beetroot_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_berries",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:melon_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wheat_seeds",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                    }]
+                }
+            ]
+        }
+    ]
+}

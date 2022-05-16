@@ -13,7 +13,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.core.BlockPos;
 
-import net.drakma.rakinator.procedures.WoodenRakeActionProcedure;
 import net.drakma.rakinator.init.RakinatorModTabs;
 import net.drakma.rakinator.init.RakinatorModBlocks;
 
@@ -24,18 +23,22 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class WoodenRakeItem extends Item {
 	public WoodenRakeItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(50));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(250));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(Blocks.OAK_LEAVES, Blocks.DIRT, Blocks.GRAVEL, RakinatorModBlocks.DUST.get()).contains(blockstate.getBlock()) ? 4f : 1;
+		return List
+				.of(Blocks.OAK_LEAVES, Blocks.DIRT, Blocks.GRAVEL, RakinatorModBlocks.DUST.get(), Blocks.SOUL_SAND,
+						RakinatorModBlocks.SHATTERED_ANDESITE.get(), RakinatorModBlocks.SHATTERED_DIORITE.get(),
+						RakinatorModBlocks.SHATTERED_END_STONE.get(), RakinatorModBlocks.SHATTERED_GRANITE.get(),
+						RakinatorModBlocks.SHATTERED_NETHERRACK.get(), RakinatorModBlocks.SHATTERED_SKYSTONE.get(), Blocks.GRASS_BLOCK, Blocks.SAND)
+				.contains(blockstate.getBlock()) ? 4f : 1;
 	}
 
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		WoodenRakeActionProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return true;
 	}
 

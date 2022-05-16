@@ -49,7 +49,7 @@ public class WoodenBarrel0Block extends Block
 
 			EntityBlock {
 			
-	public static final IntegerProperty WOODEN_BARREL_LEVEL = IntegerProperty.create("fill", 0, 13);
+	public static final IntegerProperty WOODEN_BARREL_LEVEL = IntegerProperty.create("fill", 0, 14);
 	
 	protected WoodenBarrel0Block(Properties builder) {
 		super(builder);

@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class DiamondHammerItem extends Item {
 	public DiamondHammerItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(1600));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(2000));
 	}
 
 	@Override

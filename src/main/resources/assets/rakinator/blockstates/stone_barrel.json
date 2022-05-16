@@ -44,6 +44,12 @@
         },
         "fill=14": {
             "model": "rakinator:block/stone_barrel/stone_barrel_netherrack"
+        },
+        "fill=15": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_obsidian"
+        },
+        "fill=16": {
+            "model": "rakinator:block/stone_barrel/stone_barrel_endstone"
         }
     }
 }

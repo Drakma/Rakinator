@@ -36,6 +36,9 @@ import net.drakma.rakinator.item.TopazCrystalItem;
 import net.drakma.rakinator.item.TitaniumPieceItem;
 import net.drakma.rakinator.item.TitaniumIngotItem;
 import net.drakma.rakinator.item.TitaniumChunkItem;
+import net.drakma.rakinator.item.TinPieceItem;
+import net.drakma.rakinator.item.TinIngotItem;
+import net.drakma.rakinator.item.TinChunkItem;
 import net.drakma.rakinator.item.SulfurDustItem;
 import net.drakma.rakinator.item.SugarcaneSeedItem;
 import net.drakma.rakinator.item.StoneRakeItem;
@@ -327,6 +330,11 @@ public class RakinatorModItems {
 	public static final RegistryObject<Item> CERAMIC_BUCKET_MILK = REGISTRY.register("ceramic_bucket_milk", () -> new CeramicBucketMilkItem());
 	public static final RegistryObject<Item> WOODEN_BUCKET_MILK = REGISTRY.register("wooden_bucket_milk", () -> new WoodenBucketMilkItem());
 	public static final RegistryObject<Item> STONE_BARREL = block(RakinatorModBlocks.STONE_BARREL, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
+	public static final RegistryObject<Item> TIN_PIECE = REGISTRY.register("tin_piece", () -> new TinPieceItem());
+	public static final RegistryObject<Item> TIN_CHUNK = REGISTRY.register("tin_chunk", () -> new TinChunkItem());
+	public static final RegistryObject<Item> TIN_INGOT = REGISTRY.register("tin_ingot", () -> new TinIngotItem());
+	public static final RegistryObject<Item> TIN_BLOCK = block(RakinatorModBlocks.TIN_BLOCK, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
+	public static final RegistryObject<Item> BLAZE_BLOCK = block(RakinatorModBlocks.BLAZE_BLOCK, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

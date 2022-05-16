@@ -15,8 +15,6 @@ public class ElementalistEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == RakinatorModItems.DIAMOND_RAKE.get())
-			return true;
 		if (stack.getItem() == RakinatorModItems.EMERALD_RAKE.get())
 			return true;
 		if (stack.getItem() == RakinatorModItems.NETHERITE_RAKE.get())

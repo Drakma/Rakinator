@@ -1109,7 +1109,7 @@ public class StoneBarrelRightClickProcedure {
 							.ifPresent(capability -> capability.fill(new FluidStack(Fluids.LAVA, _amount), IFluidHandler.FluidAction.EXECUTE));
 			}
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(RakinatorModItems.CERAMIC_BUCKET.get());
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
@@ -1117,10 +1117,10 @@ public class StoneBarrelRightClickProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
+							SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
 							SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
@@ -1532,6 +1532,104 @@ public class StoneBarrelRightClickProcedure {
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.netherrack.break")),
 							SoundSource.NEUTRAL, 1, 1, false);
+				}
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putString("fluid", "empty");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((blockstate.getBlock().getStateDefinition().getProperty("fill") instanceof IntegerProperty _ip
+				? blockstate.getValue(_ip)
+				: -1) == 15) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.OBSIDIAN));
+				entityToSpawn.setPickUpDelay(10);
+				entityToSpawn.setUnlimitedLifetime();
+				_level.addFreshEntity(entityToSpawn);
+			}
+			{
+				int _value = 0;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = 0;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+							_stk.shrink(_amount);
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+						}
+					});
+				}
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.stone.break")),
+							SoundSource.BLOCKS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.stone.break")),
+							SoundSource.BLOCKS, 1, 1, false);
+				}
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putString("fluid", "empty");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((blockstate.getBlock().getStateDefinition().getProperty("fill") instanceof IntegerProperty _ip
+				? blockstate.getValue(_ip)
+				: -1) == 16) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.END_STONE));
+				entityToSpawn.setPickUpDelay(10);
+				entityToSpawn.setUnlimitedLifetime();
+				_level.addFreshEntity(entityToSpawn);
+			}
+			{
+				int _value = 0;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = 0;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+							_stk.shrink(_amount);
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+						}
+					});
+				}
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")),
+							SoundSource.BLOCKS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")),
+							SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
 			if (!world.isClientSide()) {

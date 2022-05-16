@@ -395,6 +395,74 @@ public class WoodenBarrelTickProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
+		if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("sand")) {
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = 0;
+					final int _amount = 1;
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+							_stk.shrink(_amount);
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+						}
+					});
+				}
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				int _amount = 1000;
+				if (_ent != null)
+					_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+			}
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = 0;
+					final ItemStack _setstack = new ItemStack(Blocks.SOUL_SAND);
+					_setstack.setCount(1);
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable)
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+					});
+				}
+			}
+			{
+				int _value = 13;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos(x, y, z),
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.place")), SoundSource.NEUTRAL, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.place")),
+							SoundSource.NEUTRAL, 1, 1, false);
+				}
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putString("fluid", "soul_sand");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		}
 		TankLevel = new Object() {
 			public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -586,6 +654,22 @@ public class WoodenBarrelTickProcedure {
 		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("mycelium")) {
 			{
 				int _value = 13;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("soul_sand")) {
+			{
+				int _value = 14;
 				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = world.getBlockState(_pos);
 				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");

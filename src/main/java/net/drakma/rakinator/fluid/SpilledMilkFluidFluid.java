@@ -15,7 +15,7 @@ import net.drakma.rakinator.init.RakinatorModBlocks;
 
 public abstract class SpilledMilkFluidFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(RakinatorModFluids.SPILLED_MILK_FLUID,
-			RakinatorModFluids.FLOWING_SPILLED_MILK_FLUID, FluidAttributes.builder(new ResourceLocation("rakinator:blocks/spoiled_milk_still"),
+			RakinatorModFluids.FLOWING_SPILLED_MILK_FLUID, FluidAttributes.builder(new ResourceLocation("rakinator:blocks/spilled_milk"),
 					new ResourceLocation("rakinator:blocks/spoiled_milk_still"))
 
 	).explosionResistance(100f)

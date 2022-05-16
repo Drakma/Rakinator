@@ -48,7 +48,7 @@ public class StoneBarrelBlock extends Block
 
 			EntityBlock {
 			
-	public static final IntegerProperty STONE_BARREL_LEVEL = IntegerProperty.create("fill", 0, 14);
+	public static final IntegerProperty STONE_BARREL_LEVEL = IntegerProperty.create("fill", 0, 16);
 	
 	protected StoneBarrelBlock(Properties builder) {
 		super(builder);
@@ -63,7 +63,7 @@ public class StoneBarrelBlock extends Block
 
 			
 	public StoneBarrelBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 

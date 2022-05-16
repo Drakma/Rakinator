@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class WoodenHammerItem extends Item {
 	public WoodenHammerItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(100));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(250));
 	}
 
 	@Override

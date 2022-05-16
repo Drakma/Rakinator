@@ -16,7 +16,7 @@
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 150,
+    "usageCount": 1000,
     "blocksAffected": [
       {
         "value": "CUSTOM:ShatteredAndesite"
@@ -47,6 +47,15 @@
       },
       {
         "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.SAND#0"
       }
     ],
     "hasGlow": false,

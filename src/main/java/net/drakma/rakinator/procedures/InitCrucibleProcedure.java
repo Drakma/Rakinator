@@ -2,6 +2,8 @@ package net.drakma.rakinator.procedures;
 
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -30,6 +32,14 @@ public class InitCrucibleProcedure {
 					_blockEntity.getTileData().putDouble("time", 0);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			{
+				int _value = 0;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
 	}

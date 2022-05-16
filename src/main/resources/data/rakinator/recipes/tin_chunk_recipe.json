@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+            "item": "rakinator:tin_piece"
+        },
+        {
+            "item": "rakinator:tin_piece"
+        },
+        {
+            "item": "rakinator:tin_piece"
+        },
+        {
+            "item": "rakinator:tin_piece"
+        }
+    ],
+    "result": {
+        "item": "rakinator:tin_chunk",
+        "count": 1
+    }
+}

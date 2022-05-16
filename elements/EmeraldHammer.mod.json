@@ -16,7 +16,7 @@
     "attackSpeed": 1.0,
     "enchantability": 0,
     "damageVsEntity": 0.0,
-    "usageCount": 3000,
+    "usageCount": 4000,
     "blocksAffected": [
       {
         "value": "Blocks.COBBLESTONE"

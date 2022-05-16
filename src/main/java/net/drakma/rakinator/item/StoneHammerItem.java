@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class StoneHammerItem extends Item {
 	public StoneHammerItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(300));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(500));
 	}
 
 	@Override

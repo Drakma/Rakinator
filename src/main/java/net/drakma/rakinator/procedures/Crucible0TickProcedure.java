@@ -26,10 +26,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Crucible0TickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		double CurrentLevel = 0;
-		double InventoryLevel = 0;
 		BlockState BlockUnder = Blocks.AIR.defaultBlockState();
 		boolean OverHeat = false;
+		double CurrentLevel = 0;
+		double InventoryLevel = 0;
+		double HeatMultiplier = 0;
 		CurrentLevel = new Object() {
 			public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -50,6 +51,21 @@ public class Crucible0TickProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 0);
+		if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_1")))) {
+			HeatMultiplier = RakinatorModVariables.heat_block_modifier_1;
+			OverHeat = true;
+		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_2")))) {
+			HeatMultiplier = RakinatorModVariables.heat_block_modifier_2;
+			OverHeat = true;
+		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_3")))) {
+			HeatMultiplier = RakinatorModVariables.heat_block_modifier_3;
+			OverHeat = true;
+		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_4")))) {
+			HeatMultiplier = RakinatorModVariables.heat_block_modifier_4;
+			OverHeat = true;
+		} else {
+			OverHeat = false;
+		}
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -57,13 +73,8 @@ public class Crucible0TickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "timer") == RakinatorModVariables.crucible_time_between_smelting && InventoryLevel >= 1
+		}.getValue(world, new BlockPos(x, y, z), "timer") >= RakinatorModVariables.crucible_time_between_smelting && InventoryLevel >= 1
 				&& CurrentLevel < 4000) {
-			if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_blocks")))) {
-				OverHeat = true;
-			} else {
-				OverHeat = false;
-			}
 			if (InventoryLevel >= 1 && OverHeat && CurrentLevel <= 4000) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -127,7 +138,7 @@ public class Crucible0TickProcedure {
 								return blockEntity.getTileData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "timer") + 1));
+					}.getValue(world, new BlockPos(x, y, z), "timer") + HeatMultiplier));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

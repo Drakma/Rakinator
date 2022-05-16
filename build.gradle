@@ -51,7 +51,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.20'
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -91,7 +91,9 @@ dependencies {
    	runtimeOnly fg.deobf("curse.maven:construction-wand-399558:3712396")
 
    	//compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174:api")
-	runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174")
+	//runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174")
+
+   	implementation fg.deobf("curse.maven:configurator-594414:3695530")
 }
 
 apply from: 'mcreator.gradle'

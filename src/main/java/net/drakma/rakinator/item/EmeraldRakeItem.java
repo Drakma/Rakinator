@@ -23,15 +23,17 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class EmeraldRakeItem extends Item {
 	public EmeraldRakeItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(900));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(4000));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(RakinatorModBlocks.SHATTERED_ANDESITE.get(), RakinatorModBlocks.SHATTERED_DIORITE.get(),
-				RakinatorModBlocks.SHATTERED_END_STONE.get(), RakinatorModBlocks.SHATTERED_GRANITE.get(),
-				RakinatorModBlocks.SHATTERED_NETHERRACK.get(), RakinatorModBlocks.SHATTERED_SKYSTONE.get(), RakinatorModBlocks.DUST.get(),
-				Blocks.DIRT, Blocks.OAK_LEAVES, Blocks.GRAVEL).contains(blockstate.getBlock()) ? 12f : 1;
+		return List
+				.of(RakinatorModBlocks.SHATTERED_ANDESITE.get(), RakinatorModBlocks.SHATTERED_DIORITE.get(),
+						RakinatorModBlocks.SHATTERED_END_STONE.get(), RakinatorModBlocks.SHATTERED_GRANITE.get(),
+						RakinatorModBlocks.SHATTERED_NETHERRACK.get(), RakinatorModBlocks.SHATTERED_SKYSTONE.get(), RakinatorModBlocks.DUST.get(),
+						Blocks.DIRT, Blocks.OAK_LEAVES, Blocks.GRAVEL, Blocks.SAND, Blocks.SOUL_SAND, Blocks.GRASS_BLOCK)
+				.contains(blockstate.getBlock()) ? 12f : 1;
 	}
 
 	@Override

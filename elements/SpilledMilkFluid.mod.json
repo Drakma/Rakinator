@@ -4,7 +4,7 @@
   "definition": {
     "name": "Spilled Milk Fluid",
     "bucketName": "Spilled Milk Bucket",
-    "textureStill": "spoiled_milk_still",
+    "textureStill": "spilled_milk",
     "textureFlowing": "spoiled_milk_still",
     "tintType": "No tint",
     "canMultiply": false,
@@ -41,9 +41,7 @@
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": []
   }
 }

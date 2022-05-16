@@ -11,9 +11,6 @@
     "compatibleEnchantments": [],
     "compatibleItems": [
       {
-        "value": "CUSTOM:DiamondRake"
-      },
-      {
         "value": "CUSTOM:EmeraldRake"
       },
       {

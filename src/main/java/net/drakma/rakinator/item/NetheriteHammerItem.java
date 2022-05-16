@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class NetheriteHammerItem extends Item {
 	public NetheriteHammerItem() {
-		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(4800));
+		super(new Item.Properties().tab(RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB).durability(10000));
 	}
 
 	@Override

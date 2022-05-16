@@ -41,6 +41,9 @@
         },
         "fill=13": {
             "model": "rakinator:block/wooden_barrel/wooden_barrel_mycelium"
+        },
+        "fill=14": {
+            "model": "rakinator:block/wooden_barrel/wooden_barrel_soul_sand"
         }
     }
 }

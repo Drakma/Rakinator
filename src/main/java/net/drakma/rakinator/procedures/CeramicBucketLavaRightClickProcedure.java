@@ -7,6 +7,9 @@ import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.FluidStack;
 
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -26,8 +29,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.Util;
 
-import net.drakma.rakinator.init.RakinatorModItems;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class CeramicBucketLavaRightClickProcedure {
@@ -36,8 +37,16 @@ public class CeramicBucketLavaRightClickProcedure {
 			return;
 		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.CAULDRON) {
 			world.setBlock(new BlockPos(x, y, z), Blocks.LAVA_CAULDRON.defaultBlockState(), 3);
+			{
+				int _value = 3;
+				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
+				BlockState _bs = world.getBlockState(_pos);
+				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("level");
+				if (_property instanceof IntegerProperty _integerProp && _property.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(RakinatorModItems.CERAMIC_BUCKET.get());
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
@@ -45,10 +54,10 @@ public class CeramicBucketLavaRightClickProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
+							SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
 							SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
@@ -76,7 +85,7 @@ public class CeramicBucketLavaRightClickProcedure {
 							.ifPresent(capability -> capability.fill(new FluidStack(Fluids.LAVA, _amount), IFluidHandler.FluidAction.EXECUTE));
 			}
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(RakinatorModItems.CERAMIC_BUCKET.get());
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
@@ -84,10 +93,10 @@ public class CeramicBucketLavaRightClickProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
+							SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty_lava")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shield.break")),
 							SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}

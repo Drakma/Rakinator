@@ -1817,35 +1817,6 @@
       "path": "~/blocks"
     },
     {
-      "name": "EnchantedGrassUpdateTick",
-      "type": "procedure",
-      "sortid": 213,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enchanted_grass_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
       "name": "EnchantedSeed",
       "type": "item",
       "sortid": 102,
@@ -3431,6 +3402,108 @@
         ]
       },
       "path": "~/blocks"
+    },
+    {
+      "name": "WoodenBucketLavaItemInHandTick",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_bucket_lava_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "TinPiece",
+      "type": "item",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_piece",
+      "path": "~/items"
+    },
+    {
+      "name": "TinChunk",
+      "type": "item",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_chunk",
+      "path": "~/items"
+    },
+    {
+      "name": "TinIngot",
+      "type": "item",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_ingot",
+      "path": "~/items"
+    },
+    {
+      "name": "TinBlock",
+      "type": "block",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_block",
+      "path": "~/blocks/metals"
+    },
+    {
+      "name": "HeatBlock1",
+      "type": "tag",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_block_1",
+      "path": "~/tags"
+    },
+    {
+      "name": "HeatBlock2",
+      "type": "tag",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_block_2",
+      "path": "~/tags"
+    },
+    {
+      "name": "BlazeBlock",
+      "type": "block",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_block",
+      "path": "~/blocks"
+    },
+    {
+      "name": "HeatBlock3",
+      "type": "tag",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_block_3",
+      "path": "~/tags"
+    },
+    {
+      "name": "HeatBlock4",
+      "type": "tag",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_block_4",
+      "path": "~/tags"
     }
   ],
   "variable_elements": [
@@ -3438,7 +3511,7 @@
       "name": "barrel_time_between_filling",
       "type": "number",
       "scope": "global",
-      "value": "150.0"
+      "value": "300.0"
     },
     {
       "name": "collector_days_to_fill",
@@ -3459,10 +3532,10 @@
       "value": "1200.0"
     },
     {
-      "name": "wooden_lava_bucket_damage",
+      "name": "wooden_bucket_lava_damage",
       "type": "number",
       "scope": "global",
-      "value": "0.5"
+      "value": "1.5"
     },
     {
       "name": "heat_block_modifier_1",
@@ -3474,25 +3547,19 @@
       "name": "heat_block_modifier_2",
       "type": "number",
       "scope": "global",
-      "value": "0.8"
+      "value": "3.0"
     },
     {
       "name": "heat_block_modifier_3",
       "type": "number",
       "scope": "global",
-      "value": "0.6"
+      "value": "10.0"
     },
     {
       "name": "heat_block_modifier_4",
       "type": "number",
       "scope": "global",
-      "value": "0.4"
-    },
-    {
-      "name": "heat_block_modifier_5",
-      "type": "number",
-      "scope": "global",
-      "value": "0.2"
+      "value": "25.0"
     },
     {
       "name": "composting_time",
@@ -3505,6 +3572,12 @@
       "type": "arraylist_string",
       "scope": "global",
       "value": "new ArrayList\u003cString\u003e()"
+    },
+    {
+      "name": "wooden_bucket_lava_burn_interval",
+      "type": "number",
+      "scope": "global",
+      "value": "20.0"
     }
   ],
   "sound_elements": [],
@@ -3512,8 +3585,8 @@
     "en_us": {
       "block.rakinator.enchanted_water_fluid": "Enchanted Water",
       "item.rakinator.wooden_bucket_lava": "Wooden Lava Bucket",
-      "item.rakinator.grass_seed": "Grass Seed",
       "item.rakinator.starmetal_piece": "Starmetal Piece",
+      "item.rakinator.grass_seed": "Grass Seed",
       "item.rakinator.aluminum_ingot": "Aluminum Ingot",
       "item.rakinator.gold_chunk": "Gold Chunk",
       "item.rakinator.air_element": "Air Element",
@@ -3522,6 +3595,7 @@
       "block.rakinator.crucible_0": "Crucible",
       "item.rakinator.dragonstone_chunk": "Dragonstone Chunk",
       "enchantment.rakinator.elementalist": "Elementalist",
+      "item.rakinator.tin_chunk": "Tin Chunk",
       "item.rakinator.blazing_quartz_ingot": "Blazing Quartz Ingot",
       "block.rakinator.brass_block": "Brass Block",
       "item.rakinator.fire_element": "Fire Element",
@@ -3544,6 +3618,7 @@
       "item.rakinator.sulfur_dust": "Sulfur Dust",
       "item.rakinator.ceramic_bucket_milk": "Ceramic Milk Bucket",
       "block.rakinator.chrome_block": "Chrome Block",
+      "block.rakinator.blaze_block": "Blaze Block",
       "item.rakinator.gold_piece": "Gold Piece",
       "item.rakinator.uranium_ingot": "Uranium Ingot",
       "item.rakinator.diorite_pebble": "Diorite Pebble",
@@ -3585,6 +3660,7 @@
       "block.rakinator.dragonstone_block": "Dragonstone Block",
       "item.rakinator.dragonstone_piece": "Dragonstone Piece",
       "item.rakinator.dragonstone_ingot": "Dragonstone Ingot",
+      "block.rakinator.tin_block": "Tin Block",
       "block.rakinator.composter_0": "Composter 0",
       "item.rakinator.sugarcane_seed": "Sugarcane Seed",
       "block.rakinator.starmetal_block": "Starmetal Block",
@@ -3617,6 +3693,7 @@
       "item.rakinator.inferium_crystal": "Inferium Crystal",
       "item.rakinator.topaz_crystal": "Topaz Crystal",
       "item.rakinator.prosperity_crystal": "Prosperity Crystal",
+      "item.rakinator.tin_ingot": "Tin Ingot",
       "item.rakinator.tungsten_ingot": "Tungsten Ingot",
       "item.rakinator.elementium_piece": "Elementium Piece",
       "block.rakinator.shattered_granite": "Shattered Granite",
@@ -3645,6 +3722,7 @@
       "block.rakinator.lumium_block": "Lumium Block",
       "item.rakinator.wooden_hammer": "Wooden Hammer",
       "block.rakinator.iridium_block": "Iridium Block",
+      "item.rakinator.tin_piece": "Tin Piece",
       "item.rakinator.blazing_quartz_piece": "Blazing Quartz Piece",
       "item.rakinator.amythest_crystal": "Amythest Crystal",
       "item.rakinator.wooden_bucket_water": "Wooden Water Bucket",
@@ -3749,6 +3827,10 @@
       {
         "name": "enchantments",
         "children": []
+      },
+      {
+        "name": "plants",
+        "children": []
       }
     ]
   },
@@ -3772,5 +3854,5 @@
     "modElementsPackage": "net.drakma.rakinator",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200118711
+  "mcreatorVersion": 202200119518
 }

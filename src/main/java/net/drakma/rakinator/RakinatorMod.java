@@ -29,7 +29,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.drakma.rakinator.init.RakinatorModTabs;
 import net.drakma.rakinator.init.RakinatorModItems;
 import net.drakma.rakinator.init.RakinatorModFluids;
-import net.drakma.rakinator.init.RakinatorModFeatures;
 import net.drakma.rakinator.init.RakinatorModEnchantments;
 import net.drakma.rakinator.init.RakinatorModBlocks;
 import net.drakma.rakinator.init.RakinatorModBlockEntities;
@@ -54,7 +53,7 @@ public class RakinatorMod {
 		RakinatorModItems.REGISTRY.register(bus);
 
 		RakinatorModBlockEntities.REGISTRY.register(bus);
-		RakinatorModFeatures.REGISTRY.register(bus);
+
 		RakinatorModFluids.REGISTRY.register(bus);
 		RakinatorModEnchantments.REGISTRY.register(bus);
 

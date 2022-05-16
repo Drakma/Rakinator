@@ -105,7 +105,7 @@ public class StoneBarrelBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Wooden Barrel");
+		return new TextComponent("Stone Barrel");
 	}
 
 	@Override
