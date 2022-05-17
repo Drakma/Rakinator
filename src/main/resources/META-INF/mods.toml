@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="Academic Free License v3.0"
+license="MIT License"
 
 [[mods]]
 modId="rakinator"
 version="1.0.0"
 displayName="Rakinator"
 credits="Drakma"
-displayURL="https://mcreator.net"
+displayURL="http://drakma.tv"
 authors="Drakma"
 
 [[dependencies.rakinator]]
