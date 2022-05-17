@@ -119,6 +119,14 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:redstone",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
@@ -215,6 +223,14 @@
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0
                     }]
                 },
                 {
@@ -319,6 +335,14 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:redstone",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
@@ -415,6 +439,14 @@
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
                     }]
                 },
                 {
@@ -519,6 +551,14 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:redstone",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
@@ -615,6 +655,14 @@
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.2
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:skystone_dust",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
                     }]
                 },
                 {

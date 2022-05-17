@@ -6,11 +6,9 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 
 import net.drakma.rakinator.procedures.WoodenBucketRightClickProcedure;
-import net.drakma.rakinator.procedures.WoodenBucketRightClickEntityProcedure;
 import net.drakma.rakinator.init.RakinatorModTabs;
 
 public class WoodenBucketItem extends Item {
@@ -33,13 +31,6 @@ public class WoodenBucketItem extends Item {
 		InteractionResult retval = super.useOn(context);
 		WoodenBucketRightClickProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getPlayer());
-		return retval;
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		WoodenBucketRightClickEntityProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity, itemstack);
 		return retval;
 	}
 }

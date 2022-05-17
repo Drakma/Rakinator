@@ -1,0 +1,199 @@
+{
+    "type": "minecraft:block",
+    "pools": [{
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "items": [
+                            "rakinator:wooden_rake",
+                            "rakinator:stone_rake",
+                            "rakinator:iron_rake",
+                            "rakinator:diamond_rake",
+                            "rakinator:emerald_rake",
+                            "rakinator:netherite_rake"
+                        ]
+                    }
+                }
+            }],
+            "entries": [{
+                "type": "minecraft:item",
+                "name": "rakinator:shattered_diorite"
+            }],
+            "functions": [{
+                "function": "minecraft:set_count",
+                "count": 1
+            }]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:wooden_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:stone_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:iron_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:diamond_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 4,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:emerald_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        },
+        {
+            "rolls": 5,
+            "conditions": [{
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": [
+                        "rakinator:netherite_rake"
+                    ]
+                }
+            }],
+            "entries": [{
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 1
+                    }]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "rakinator:diorite_pebble",
+                    "conditions": [{
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.15
+                    }]
+                }
+            ]
+        }
+    ]
+}

@@ -1506,47 +1506,6 @@
       "path": "~/items"
     },
     {
-      "name": "CeramicBucketRightClickEntity",
-      "type": "procedure",
-      "sortid": 205,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ceramic_bucket_right_click_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/items"
-    },
-    {
       "name": "Plantable",
       "type": "tag",
       "sortid": 206,
@@ -2272,81 +2231,6 @@
       "path": "~/items"
     },
     {
-      "name": "CeramicBucketMilkFoodEaten",
-      "type": "procedure",
-      "sortid": 225,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ceramic_bucket_milk_food_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/food"
-    },
-    {
-      "name": "WoodenBucketMilkFoodEaten",
-      "type": "procedure",
-      "sortid": 226,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_bucket_milk_food_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/food"
-    },
-    {
-      "name": "WoodenBucketRightClickEntity",
-      "type": "procedure",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_bucket_right_click_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/items"
-    },
-    {
       "name": "SaltWaterFluid",
       "type": "fluid",
       "sortid": 118,
@@ -2554,72 +2438,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ceramic_bucket_place_murky_water",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/procedures"
-    },
-    {
-      "name": "WoodenBucketPlaceMilk",
-      "type": "procedure",
-      "sortid": 234,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_bucket_place_milk",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/procedures"
-    },
-    {
-      "name": "CeramicBucketPlaceMilk",
-      "type": "procedure",
-      "sortid": 235,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ceramic_bucket_place_milk",
       "metadata": {
         "dependencies": [
           {
@@ -3307,24 +3125,6 @@
       "path": "~/tags"
     },
     {
-      "name": "CeramicBucketMilk",
-      "type": "item",
-      "sortid": 244,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ceramic_bucket_milk",
-      "path": "~/food"
-    },
-    {
-      "name": "WoodenBucketMilk",
-      "type": "item",
-      "sortid": 245,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_bucket_milk",
-      "path": "~/food"
-    },
-    {
       "name": "StoneBarrel",
       "type": "block",
       "sortid": 246,
@@ -3648,6 +3448,15 @@
       "locked_code": false,
       "registry_name": "uranium_chunk",
       "path": "~/items"
+    },
+    {
+      "name": "SkystoneDust",
+      "type": "item",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skystone_dust",
+      "path": "~/items"
     }
   ],
   "variable_elements": [
@@ -3729,8 +3538,8 @@
     "en_us": {
       "block.rakinator.enchanted_water_fluid": "Enchanted Water",
       "item.rakinator.wooden_bucket_lava": "Wooden Lava Bucket",
-      "item.rakinator.grass_seed": "Grass Seed",
       "item.rakinator.starmetal_piece": "Starmetal Piece",
+      "item.rakinator.grass_seed": "Grass Seed",
       "item.rakinator.gold_chunk": "Gold Chunk",
       "item.rakinator.dragonstone_chunk": "Dragonstone Chunk",
       "enchantment.rakinator.elementalist": "Elementalist",
@@ -3739,17 +3548,17 @@
       "item.rakinator.blazing_quartz_ingot": "Blazing Quartz Ingot",
       "item.rakinator.tungsten_piece": "Tungsten Piece",
       "item.rakinator.ceramic_bucket": "Ceramic Bucket",
-      "item.rakinator.silver_piece": "Silver Piece",
       "item.rakinator.peridot_crystal": "Peridot Crystal",
+      "item.rakinator.silver_piece": "Silver Piece",
       "block.rakinator.collector_0": "Collector 0",
       "item.rakinator.uranium_piece": "Uranium Piece",
       "item.rakinator.carrot_seed": "Carrot Seed",
       "item.rakinator.emerald_hammer": "Emerald Hammer",
       "item.rakinator.tungsten_chunk": "Tungsten Chunk",
-      "item.rakinator.bamboo_seed": "Bamboo Seed",
       "item.rakinator.soulstone_ingot": "Soulstone Ingot",
-      "block.rakinator.chrome_block": "Chrome Block",
+      "item.rakinator.bamboo_seed": "Bamboo Seed",
       "block.rakinator.blaze_block": "Blaze Block",
+      "block.rakinator.chrome_block": "Chrome Block",
       "item.rakinator.gold_piece": "Gold Piece",
       "item.rakinator.nickel_chunk": "Nickel Chunk",
       "item.rakinator.water_element": "Water Element",
@@ -3780,14 +3589,14 @@
       "item.rakinator.iridium_ingot": "Iridium Ingot",
       "block.rakinator.wooden_barrel_0": "Wooden Barrel",
       "item.rakinator.blackstone_pebble": "Blackstone Pebble",
-      "block.rakinator.osmium_block": "Osmium Block",
       "block.rakinator.dust": "Dust",
+      "block.rakinator.osmium_block": "Osmium Block",
       "item.rakinator.ceramic_bucket_enchanted_water": "Ceramic Enchanted Water Bucket",
       "item.rakinator.steel_ingot": "Steel Ingot",
       "item.rakinator.inferium_crystal": "Inferium Crystal",
       "item.rakinator.tin_ingot": "Tin Ingot",
-      "block.rakinator.platinum_block": "Platinum Block",
       "item.rakinator.lead_ingot": "Lead Ingot",
+      "block.rakinator.platinum_block": "Platinum Block",
       "block.rakinator.titanium_block": "Titanium Block",
       "item.rakinator.deepslate_pebble": "Deepslate Pebble",
       "fluid.rakinator.murky_water_fluid": "Murky Water",
@@ -3830,9 +3639,9 @@
       "item.rakinator.unfired_ceramic": "Unfired Ceramic",
       "item.rakinator.iron_hammer": "Iron Hammer",
       "item.rakinator.enderium_ingot": "Enderium Ingot",
-      "item.rakinator.test_bucket.filled": "Ceramic %s Bucket",
-      "item.rakinator.electrum_ingot": "Electrum Ingot",
       "block.rakinator.spilled_milk_fluid": "Spilled Milk Fluid",
+      "item.rakinator.electrum_ingot": "Electrum Ingot",
+      "item.rakinator.test_bucket.filled": "Ceramic %s Bucket",
       "item.rakinator.wooden_bucket": "Wooden Bucket",
       "item.rakinator.dark_oak_seed": "Dark Oak Seed",
       "item.rakinator.titanium_ingot": "Titanium Ingot",
@@ -3852,17 +3661,16 @@
       "item.rakinator.chrome_ingot": "Chrome Ingot",
       "block.rakinator.aluminum_block": "Aluminum Block",
       "item.rakinator.sulfur_dust": "Sulfur Dust",
-      "item.rakinator.ceramic_bucket_milk": "Ceramic Milk Bucket",
       "item.rakinator.uranium_ingot": "Uranium Ingot",
       "item.rakinator.diorite_pebble": "Diorite Pebble",
       "item.rakinator.copper_piece": "Copper Piece",
-      "item.rakinator.wooden_bucket_milk": "Wooden Milk Bucket",
       "item.rakinator.wooden_rake": "Wooden Rake",
       "item.rakinator.diamond_rake": "Diamond Rake",
       "block.rakinator.nickel_block": "Nickel Block",
       "item.rakinator.rock_crystal": "Rock Crystal",
       "item.rakinator.jungle_seed": "Jungle Seed",
       "block.rakinator.silver_block": "Silver Block",
+      "item.rakinator.skystone_dust": "Skystone Dust",
       "item.rakinator.starmetal_ingot": "Starmetal Ingot",
       "item.rakinator.netherite_hammer": "Netherite Hammer",
       "item.rakinator.elementium_ingot": "Elementium Ingot",

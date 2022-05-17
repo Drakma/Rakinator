@@ -21,7 +21,6 @@ import net.drakma.rakinator.item.WoodenHammerItem;
 import net.drakma.rakinator.item.WoodenBucketWaterItem;
 import net.drakma.rakinator.item.WoodenBucketSaltWaterItem;
 import net.drakma.rakinator.item.WoodenBucketMurkyWaterItem;
-import net.drakma.rakinator.item.WoodenBucketMilkItem;
 import net.drakma.rakinator.item.WoodenBucketLavaItem;
 import net.drakma.rakinator.item.WoodenBucketItem;
 import net.drakma.rakinator.item.WoodenBucketEnchantedWaterItem;
@@ -55,6 +54,7 @@ import net.drakma.rakinator.item.SoulstonePieceItem;
 import net.drakma.rakinator.item.SoulstoneIngotItem;
 import net.drakma.rakinator.item.SoulstoneChunkItem;
 import net.drakma.rakinator.item.SouliumCrystalItem;
+import net.drakma.rakinator.item.SkystoneDustItem;
 import net.drakma.rakinator.item.SilverPieceItem;
 import net.drakma.rakinator.item.SilverIngotItem;
 import net.drakma.rakinator.item.SilverChunkItem;
@@ -136,7 +136,6 @@ import net.drakma.rakinator.item.ChromeDustItem;
 import net.drakma.rakinator.item.CeramicBucketWaterItem;
 import net.drakma.rakinator.item.CeramicBucketSaltWaterItem;
 import net.drakma.rakinator.item.CeramicBucketMurkyWaterItem;
-import net.drakma.rakinator.item.CeramicBucketMilkItem;
 import net.drakma.rakinator.item.CeramicBucketLavaItem;
 import net.drakma.rakinator.item.CeramicBucketItem;
 import net.drakma.rakinator.item.CeramicBucketEnchantedWaterItem;
@@ -342,8 +341,6 @@ public class RakinatorModItems {
 	public static final RegistryObject<Item> FIRE_ELEMENT = REGISTRY.register("fire_element", () -> new FireElementItem());
 	public static final RegistryObject<Item> WATER_ELEMENT = REGISTRY.register("water_element", () -> new WaterElementItem());
 	public static final RegistryObject<Item> TEMERIUM_BLOCK = block(RakinatorModBlocks.TEMERIUM_BLOCK, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
-	public static final RegistryObject<Item> CERAMIC_BUCKET_MILK = REGISTRY.register("ceramic_bucket_milk", () -> new CeramicBucketMilkItem());
-	public static final RegistryObject<Item> WOODEN_BUCKET_MILK = REGISTRY.register("wooden_bucket_milk", () -> new WoodenBucketMilkItem());
 	public static final RegistryObject<Item> STONE_BARREL = block(RakinatorModBlocks.STONE_BARREL, RakinatorModTabs.TAB_RAKINATOR_CREATIVE_TAB);
 	public static final RegistryObject<Item> TIN_PIECE = REGISTRY.register("tin_piece", () -> new TinPieceItem());
 	public static final RegistryObject<Item> TIN_CHUNK = REGISTRY.register("tin_chunk", () -> new TinChunkItem());
@@ -365,6 +362,7 @@ public class RakinatorModItems {
 	public static final RegistryObject<Item> PORCELAIN_BRICK = REGISTRY.register("porcelain_brick", () -> new PorcelainBrickItem());
 	public static final RegistryObject<Item> URANIUM_PIECE = REGISTRY.register("uranium_piece", () -> new UraniumPieceItem());
 	public static final RegistryObject<Item> URANIUM_CHUNK = REGISTRY.register("uranium_chunk", () -> new UraniumChunkItem());
+	public static final RegistryObject<Item> SKYSTONE_DUST = REGISTRY.register("skystone_dust", () -> new SkystoneDustItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
