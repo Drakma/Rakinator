@@ -21,7 +21,12 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.config.ModConfig.Type;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.event.config.ModConfigEvent;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
@@ -37,6 +42,8 @@ import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
 
+import net.drakma.rakinator.config.ConfigHandler;
+
 @Mod("rakinator")
 public class RakinatorMod {
 	public static final Logger LOGGER = LogManager.getLogger(RakinatorMod.class);
@@ -49,7 +56,11 @@ public class RakinatorMod {
 	public RakinatorMod() {
 		RakinatorModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		RakinatorModBlocks.REGISTRY.register(bus);
+    
+    ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ConfigHandler.commonSpec);
+    bus.register(ConfigHandler.class);
+    
+    RakinatorModBlocks.REGISTRY.register(bus);
 		RakinatorModItems.REGISTRY.register(bus);
 
 		RakinatorModBlockEntities.REGISTRY.register(bus);

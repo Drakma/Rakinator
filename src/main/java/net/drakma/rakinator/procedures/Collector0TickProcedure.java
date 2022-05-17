@@ -13,7 +13,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
-import net.drakma.rakinator.network.RakinatorModVariables;
+import net.drakma.rakinator.config.ConfigHandler;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -22,7 +22,7 @@ public class Collector0TickProcedure {
 		boolean IsMorning = false;
 		double DailyFill = 0;
 		double CurrentLevel = 0;
-		DailyFill = 1000 / RakinatorModVariables.collector_days_to_fill;
+		DailyFill = 1000 / ConfigHandler.COMMON.collectorDaysToFill.get();
 		if (world.dayTime() >= 167 && world.dayTime() <= 2000) {
 			IsMorning = true;
 		} else {

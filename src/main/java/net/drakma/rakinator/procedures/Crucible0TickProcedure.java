@@ -20,7 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
-import net.drakma.rakinator.network.RakinatorModVariables;
+import net.drakma.rakinator.config.ConfigHandler;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -52,16 +52,16 @@ public class Crucible0TickProcedure {
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 0);
 		if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_1")))) {
-			HeatMultiplier = RakinatorModVariables.heat_block_modifier_1;
+			HeatMultiplier = ConfigHandler.COMMON.crucibleHeatBlockMultiplierLevel1.get();
 			OverHeat = true;
 		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_2")))) {
-			HeatMultiplier = RakinatorModVariables.heat_block_modifier_2;
+			HeatMultiplier = ConfigHandler.COMMON.crucibleHeatBlockMultiplierLevel2.get();
 			OverHeat = true;
 		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_3")))) {
-			HeatMultiplier = RakinatorModVariables.heat_block_modifier_3;
+			HeatMultiplier = ConfigHandler.COMMON.crucibleHeatBlockMultiplierLevel3.get();
 			OverHeat = true;
 		} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:heat_block_4")))) {
-			HeatMultiplier = RakinatorModVariables.heat_block_modifier_4;
+			HeatMultiplier = ConfigHandler.COMMON.crucibleHeatBlockMultiplierLevel4.get();
 			OverHeat = true;
 		} else {
 			OverHeat = false;
@@ -73,7 +73,7 @@ public class Crucible0TickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "timer") >= RakinatorModVariables.crucible_time_between_smelting && InventoryLevel >= 1
+		}.getValue(world, new BlockPos(x, y, z), "timer") >= ConfigHandler.COMMON.crucibleMeltingInterval.get() && InventoryLevel >= 1
 				&& CurrentLevel < 4000) {
 			if (InventoryLevel >= 1 && OverHeat && CurrentLevel <= 4000) {
 				{
@@ -92,7 +92,7 @@ public class Crucible0TickProcedure {
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-					int _amount = 200;
+					int _amount = (int) ConfigHandler.COMMON.crucibleMeltingAmount.get();
 					if (_ent != null)
 						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
 								.ifPresent(capability -> capability.fill(new FluidStack(Fluids.LAVA, _amount), IFluidHandler.FluidAction.EXECUTE));

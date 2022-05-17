@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "rakinator:wooden_barrel_0",
+    "rakinator:stone_barrel",
     "rakinator:collector_0",
-    "rakinator:composter_0",
-    "rakinator:stone_barrel"
+    "rakinator:composter_0"
   ]
 }

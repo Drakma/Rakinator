@@ -15,7 +15,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
-import net.drakma.rakinator.network.RakinatorModVariables;
+import net.drakma.rakinator.config.ConfigHandler;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -166,7 +166,7 @@ public class Composter0TickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "timer") == RakinatorModVariables.composting_time) {
+			}.getValue(world, new BlockPos(x, y, z), "timer") == ConfigHandler.COMMON.compostingInterval.get()) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {

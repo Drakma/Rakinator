@@ -400,7 +400,7 @@ public class WoodenBarrelOnBlockRightClickedProcedure {
 							.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 			}
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(RakinatorModItems.WOODEN_BUCKET_MURKY_WATER.get());
+				ItemStack _setstack = new ItemStack(RakinatorModItems.WOODEN_BUCKET_SALT_WATER.get());
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)

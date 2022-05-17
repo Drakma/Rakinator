@@ -22,9 +22,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
-import net.drakma.rakinator.network.RakinatorModVariables;
 import net.drakma.rakinator.init.RakinatorModFluids;
 import net.drakma.rakinator.init.RakinatorModBlocks;
+import net.drakma.rakinator.config.ConfigHandler;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -88,7 +88,7 @@ public class WoodenBarrelTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "timer") == RakinatorModVariables.barrel_time_between_filling) {
+			}.getValue(world, new BlockPos(x, y, z), "timer") == ConfigHandler.COMMON.barrelTransformEnchantedWaterTicks.get()) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.LARGE_SMOKE, (x + 0.5), (y + 0.8), (z + 0.5), 20, 0.2, 1, 0.2, 0);
 				{
@@ -185,11 +185,11 @@ public class WoodenBarrelTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "timer") == RakinatorModVariables.barrel_time_between_filling) {
+			}.getValue(world, new BlockPos(x, y, z), "timer") == ConfigHandler.COMMON.woodenBarrelRainFillInterval.get()) {
 				if (TankLevel < 857) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
-						int _amount = 144;
+						int _amount = (int) ConfigHandler.COMMON.woodenBarrelRainFillAmount.get();
 						if (_ent != null)
 							_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null).ifPresent(
 									capability -> capability.fill(new FluidStack(Fluids.WATER, _amount), IFluidHandler.FluidAction.EXECUTE));
@@ -637,7 +637,7 @@ public class WoodenBarrelTickProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "fluid")).equals("salt_water")) {
 			{
-				int _value = 11;
+				int _value = 12;
 				BlockPos _pos = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = world.getBlockState(_pos);
 				Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("fill");
