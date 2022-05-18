@@ -119,10 +119,10 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
-                        "chance": 0
+                        "chance": 0.005
                     }]
                 },
                 {
@@ -227,10 +227,10 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
-                        "chance": 0
+                        "chance": 0.005
                     }]
                 },
                 {
@@ -335,7 +335,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.1
@@ -443,7 +443,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.15
@@ -551,7 +551,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.15
@@ -659,7 +659,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:skystone_dust",
+                    "name": "rakinator:skystone_dust",
                     "conditions": [{
                         "condition": "minecraft:random_chance",
                         "chance": 0.15

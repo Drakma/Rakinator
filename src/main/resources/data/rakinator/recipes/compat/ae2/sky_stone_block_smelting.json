@@ -2,13 +2,12 @@
     "type": "minecraft:blasting",
     "conditions": [{
         "type": "forge:mod_loaded",
-        "modid": "appledenergistics2"
+        "modid": "ae2"
     }],
-
     "experience": 0,
     "cookingtime": 200,
     "ingredient": {
         "item": "rakinator:shattered_skystone"
     },
-    "result": "rakinator:sky_stone_block"
+    "result": "ae2:sky_stone_block"
 }
