@@ -17,12 +17,3 @@ authors="Drakma"
     ordering="NONE"
     side="BOTH"
 
-
-
-[[dependencies.rakinator]]
-    modId="jade"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-

@@ -18,3 +18,7 @@ run/
 # Other Files (In Eclipse)
 .classpath
 .project
+/mcreator.gradle
+/rakinator.mcreator
+/models
+/elements

@@ -10,9 +10,9 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 
-version = '1.0'
-group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+version = '1.0.3'
+group = 'net.drakma.rakinator'
+archivesBaseName = 'rakinator'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -50,14 +50,6 @@ minecraft {
     }
 }
 
-dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.20'
-}
-
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
-}
-
 repositories {
     maven {
         url "https://www.cursemaven.com"
@@ -78,23 +70,27 @@ repositories {
 }
 
 dependencies {
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.20'
+
    	//compileOnly fg.deobf("curse.maven:pipez-443900:3736957")
    	//runtimeOnly fg.deobf("curse.maven:top-245211:3671753")
-
    	//compileOnly fg.deobf("curse.maven:pipez-443900:3736957")
    	runtimeOnly fg.deobf("curse.maven:pipez-443900:3736957")
-
    	//compileOnly fg.deobf("curse.maven:configured-457570:3721946")
    	runtimeOnly fg.deobf("curse.maven:configured-457570:3721946")
-
    	//compileOnly fg.deobf("curse.maven:construction-wand-399558:3712396")
    	runtimeOnly fg.deobf("curse.maven:construction-wand-399558:3712396")
-
    	//compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174:api")
-	runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174")
-
-   	//implementation fg.deobf("curse.maven:configurator-594414:3695530")
+	  runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.5.174")
+    //compileOnly fg.deobf("curse.maven:jade-324717:3681449")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:3681449")
 }
 
-apply from: 'mcreator.gradle'
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+
+//apply from: 'mcreator.gradle'
 

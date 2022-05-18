@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.drakma.rakinator.init;
 
 import net.minecraftforge.api.distmarker.OnlyIn;

@@ -104,7 +104,7 @@ public class Collector0BlockEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Collector 0");
+		return new TextComponent("Collector");
 	}
 
 	@Override
